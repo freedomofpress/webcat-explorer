@@ -7,11 +7,6 @@ on:
     branches: [main]
 permissions:
   contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,15 +30,7 @@ jobs:
         with:
           path: .cache
           key: sigsum-scan-${{ github.run_id }}
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
+          name: site
           path: site
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
