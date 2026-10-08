@@ -1,0 +1,5 @@
+# Cloudflare Pages and Netlify read this file. WEBCAT enrollment needs the CSP header:
+# the extension reads the policy from the response header and ignores <meta> tags.
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff

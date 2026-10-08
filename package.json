@@ -1,0 +1,15 @@
+{
+  "name": "webcat-explorer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@freedomofpress/cometbft": "^0.2.0",
+    "@freedomofpress/ics23": "^0.2.0",
+    "@freedomofpress/sigstore-browser": "^0.1.15",
+    "@freedomofpress/sigsum": "^0.4.0"
+  }
+}

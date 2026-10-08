@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEBCAT enrollment explorer</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<main>
+<h1>WEBCAT <span>enrollment explorer</span></h1>
+<p class="meta" id="meta">Loading data.json…</p>
+<div class="stats" id="stats"></div>
+<div class="bar">
+  <input type="search" id="q" placeholder="Search host, type, status, identity, repo, log…" autocomplete="off">
+  <div class="grp" id="f-type"><button class="btn on" data-v="">all types</button><button class="btn" data-v="sigsum">sigsum</button><button class="btn" data-v="sigstore">sigstore</button></div>
+  <div class="grp" id="f-status"><button class="btn on" data-v="">any status</button><button class="btn" data-v="ok">verified</button><button class="btn" data-v="fail">failing</button></div>
+</div>
+<div class="head" id="head"><button data-k="host">Host</button><button data-k="type">Type</button><button data-k="status">Status</button><button data-k="signer">Signer / log</button><button data-k="updated">Updated</button></div>
+<div id="list"></div>
+<div class="pager" id="pager"></div>
+<p class="note">Daily build. Sigsum logs scanned daily. Chain history and Sigstore history: TBD. <a href="/data.json">data.json</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+name: build
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      # The scan state is cached under a per-run key. restore-keys falls back to the newest previous run.
+      - uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: sigsum-scan-${{ github.run_id }}
+          restore-keys: sigsum-scan-
+      - run: npm run build
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .cache
+          key: sigsum-scan-${{ github.run_id }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
