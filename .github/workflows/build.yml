@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,7 +30,9 @@ jobs:
         with:
           path: .cache
           key: sigsum-scan-${{ github.run_id }}
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: site
+      # Cloudflare Pages deploys from Git, so the fresh data.json has to land on main.
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add site/data.json
+          git diff --cached --quiet || { git commit -m "Refresh data.json" && git push; }
