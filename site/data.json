@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-10-18T04:32:43.627Z",
+ "generated_at": "2026-10-19T04:36:08.547Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "335781",
-  "time": "2026-10-18T04:00:52.023623032Z",
-  "app_hash": "61b39b50d061de0eac1a010f0127893872980c3157dfe8ab891fc1ef71397428",
+  "height": "337198",
+  "time": "2026-10-19T04:00:47.472307484Z",
+  "app_hash": "bbb0f4f673424800beff493f2c1d62f9d4c38c6b575fb2eeabecbfc8e412a170",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5230
+   "size": 5251
   },
   "https://seasalp.glasklar.is": {
-   "size": 73540
+   "size": 73771
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 239931
+   "size": 240008
   }
  },
  "sites": [
@@ -43,13 +43,13 @@
    },
    "manifest": {
     "name": "https://github.com/element-hq/element-web",
-    "version": "1.12.30",
-    "files": 659,
+    "version": "1.12.32",
+    "files": 708,
     "wasm": 5,
     "default_csp": "default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval'; img-src * blob: data:; connect-src * blob:; font-src 'self' data: ; media-src * blob: data:; child-src blob: data:; worker-src 'self'; frame-src blob: data:; form-action 'self'; manifest-src 'self'; frame-ancestors 'self'",
     "extra_csp": 0
    },
-   "valid_until": 1796962988,
+   "valid_until": 1797567327,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -58,14 +58,14 @@
        "build_signer": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/freedomofpress/webcat-demo-element",
-       "sha": "c64d30cc42fce8a83918b6c1350984bdf3a4a71d",
+       "sha": "94a224e92b5946d329e5186a08138ed3ba508d57",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "trigger": "schedule",
-       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/38203539569/attempts/1",
+       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/39198525682/attempts/1",
        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-10-12T04:23:08.000Z",
+       "not_before": "2026-10-19T04:15:27.000Z",
        "workflow": {
         "repo": "https://github.com/freedomofpress/webcat-demo-element",
         "file": "https://github.com/freedomofpress/webcat-demo-element/blob/refs/heads/main/.github/workflows/build.yml",
@@ -76,41 +76,25 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "3220867677",
-       "integrated_time": "1791778989",
-       "search_url": "https://search.sigstore.dev/?logIndex=3220867677",
-       "uuid": "108e9186e8c5677abb73242f07fca6de65871c8ae88c8cfafae3cd9ccb16ba2852322b49dd5f0f4b",
+       "log_index": "3319310299",
+       "integrated_time": "1792383327",
+       "search_url": "https://search.sigstore.dev/?logIndex=3319310299",
+       "uuid": "108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677acf5091545ff8c59f218a45e8753d2a21d6b15fc6ec1900e33067968af201a792",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677acf5091545ff8c59f218a45e8753d2a21d6b15fc6ec1900e33067968af201a792"
-       },
-       {
-        "uuid": "108e9186e8c5677ae556bb3c2842d6905e8ed843cdc8d039e4a7ad28b2b7f6e0c2a6bc0c12b72e8d",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae556bb3c2842d6905e8ed843cdc8d039e4a7ad28b2b7f6e0c2a6bc0c12b72e8d"
-       },
-       {
-        "uuid": "108e9186e8c5677a46c57702e29f7792571fd57df333ad7a3dce45ae605c1d906fe9b95ae71658dc",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a46c57702e29f7792571fd57df333ad7a3dce45ae605c1d906fe9b95ae71658dc"
-       },
-       {
-        "uuid": "108e9186e8c5677a488f87316b5a4d37128252ca303ec2f1f1ee30119ce013bc36e7a9aff270906b",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a488f87316b5a4d37128252ca303ec2f1f1ee30119ce013bc36e7a9aff270906b"
-       },
-       {
-        "uuid": "108e9186e8c5677abb73242f07fca6de65871c8ae88c8cfafae3cd9ccb16ba2852322b49dd5f0f4b",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677abb73242f07fca6de65871c8ae88c8cfafae3cd9ccb16ba2852322b49dd5f0f4b"
+        "uuid": "108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf"
        }
       ],
       "previous": []
      }
     }
    },
-   "signed_at": 1791778988
+   "signed_at": 1792383327
   },
   {
    "host": "enrollment-error.demo.webcat.tech",
@@ -245,7 +229,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5230,
+        "size": 5251,
         "leaves": [
          [
           3552,
@@ -255,7 +239,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 73540,
+        "size": 73771,
         "leaves": [
          [
           58866,
@@ -334,12 +318,12 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
-       },
-       {
         "uuid": "108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1"
+       },
+       {
+        "uuid": "108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
        }
       ]
      }
@@ -395,7 +379,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 239931,
+        "size": 240008,
         "leaves": [
          [
           239075,
@@ -532,7 +516,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 239931,
+        "size": 240008,
         "leaves": [
          [
           161799,
@@ -593,7 +577,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 239931,
+        "size": 240008,
         "leaves": [
          [
           204430,
@@ -705,16 +689,16 @@
      "DsfhaEMRmxIDd6c5E6xqy8LQPYJDLiw2uEGwmpWEHyU": "https://seasalp.glasklar.is"
     }
    },
-   "signed_at": 1791582773,
+   "signed_at": 1792364797,
    "manifest": {
     "name": "https://github.com/ActivistChecklist/riskmapper",
-    "version": "0.1.3",
+    "version": "0.1.5",
     "files": 40,
     "wasm": 2,
     "default_csp": "default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self' data:; worker-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
     "extra_csp": 0
    },
-   "valid_until": 1807134773,
+   "valid_until": 1807916797,
    "transparency": {
     "sigsum": [
      {
@@ -722,15 +706,15 @@
       "signer_key_hash": "59994242b50d3a68d7f85c2cc0583f7395238fb346bb69b3eb8174b3f1578fcb",
       "log_key_hash": "c03f05182be9341e33b9edd5f3f8675b08332164640203e743f4285359cace47",
       "log_url": "https://ginkgo.tlog.mullvad.net",
-      "leaf_index": 4988,
-      "tree_size": 4989,
+      "leaf_index": 5249,
+      "tree_size": 5250,
       "cosignatures": 3,
-      "leaf_url": "https://ginkgo.tlog.mullvad.net/get-leaves/4988/4989",
+      "leaf_url": "https://ginkgo.tlog.mullvad.net/get-leaves/5249/5250",
       "in_log": true,
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5230,
+        "size": 5251,
         "leaves": [
          [
           3732,
@@ -747,12 +731,20 @@
          [
           4988,
           "e8782f583ba35bf750862464ac0c1eaf7dffdc4c32ffaf8b7268ab848356ddc7"
+         ],
+         [
+          5247,
+          "4e153c521117532bd50dfc4ac97dea580a52eef8b29b5c909a1a327b1f7e6bbc"
+         ],
+         [
+          5249,
+          "28e43b0157ce874e562c51dfaec3d399b700117c59d1b617c56efee5976ffadd"
          ]
         ]
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 73540,
+        "size": 73771,
         "leaves": [
          [
           60281,
@@ -837,7 +829,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5230,
+        "size": 5251,
         "leaves": [
          [
           4447,
@@ -851,7 +843,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 73540,
+        "size": 73771,
         "leaves": [
          [
           67013,
@@ -930,6 +922,10 @@
      "by_hash": {
       "current": [
        {
+        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        },
@@ -940,10 +936,6 @@
        {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
-        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        }
       ],
       "previous": [
@@ -1203,8 +1195,8 @@
    "enrollment": {
     "type": "sigstore",
     "claims": {
-     "1.3.6.1.4.1.57264.1.8": "https://token.actions.githubusercontent.com",
      "1.3.6.1.4.1.57264.1.1": "https://token.actions.githubusercontent.com",
+     "1.3.6.1.4.1.57264.1.8": "https://token.actions.githubusercontent.com",
      "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
      "1.3.6.1.4.1.57264.1.11": "github-hosted",
      "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
@@ -1214,14 +1206,13 @@
    },
    "manifest": {
     "name": "https://github.com/cfm/www.endeixis.org",
-    "version": "2026.02.25.18.47.04",
+    "version": "2026.10.18.15.34.12",
     "files": 54,
     "wasm": 0,
     "default_csp": "base-uri 'self'; default-src 'none'; font-src 'self' https://www.endeixis.org; form-action 'self'; frame-ancestors 'self'; object-src 'none'; script-src 'none'; style-src 'self' https://www.endeixis.org;",
     "extra_csp": 0
    },
-   "error": "EXPIRED",
-   "detail": "issued 1772045317, max_age 15552000",
+   "valid_until": 1807901572,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -1230,14 +1221,14 @@
        "build_signer": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/cfm/www.endeixis.org",
-       "sha": "ca54ab0eb266668e8c6e8f90c3515e817c623c06",
+       "sha": "7f9f6388304079ed39f4f771e554629f8fc1a09a",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
-       "trigger": "push",
-       "run": "https://github.com/cfm/www.endeixis.org/actions/runs/22410987852/attempts/1",
+       "trigger": "workflow_dispatch",
+       "run": "https://github.com/cfm/www.endeixis.org/actions/runs/39156078926/attempts/1",
        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-02-25T18:48:37.000Z",
+       "not_before": "2026-10-18T18:52:52.000Z",
        "workflow": {
         "repo": "https://github.com/freedomofpress/webcat-cli",
         "file": "https://github.com/freedomofpress/webcat-cli/blob/refs/heads/main/.github/workflows/webcat-generate-and-commit-manifest.yml",
@@ -1248,30 +1239,30 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "992232056",
-       "integrated_time": "1772045317",
-       "search_url": "https://search.sigstore.dev/?logIndex=992232056",
-       "uuid": "108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5",
+       "log_index": "3315284809",
+       "integrated_time": "1792349573",
+       "search_url": "https://search.sigstore.dev/?logIndex=3315284809",
+       "uuid": "108e9186e8c5677a77877d2fb26ef60929fe0d3c323b73c59ba2f1b84a34d123fb48bf5eb05cbb7b",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5"
+        "uuid": "108e9186e8c5677a77877d2fb26ef60929fe0d3c323b73c59ba2f1b84a34d123fb48bf5eb05cbb7b",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a77877d2fb26ef60929fe0d3c323b73c59ba2f1b84a34d123fb48bf5eb05cbb7b"
        }
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677addf42b090512cee113d3b06cc4050c7e0c2803ad652a504b52feee9d5f9574ff",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677addf42b090512cee113d3b06cc4050c7e0c2803ad652a504b52feee9d5f9574ff"
+        "uuid": "108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5"
        }
       ]
      }
     }
    },
-   "signed_at": 1772045317
+   "signed_at": 1792349572
   }
  ]
 }
