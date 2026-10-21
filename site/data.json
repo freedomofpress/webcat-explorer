@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T10:13:28.731Z",
+ "generated_at": "2026-10-21T10:15:35.230Z",
  "block": {
   "chain_id": "webcat-test-02",
   "height": "340387",
@@ -611,12 +611,12 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
-       },
-       {
         "uuid": "108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1"
+       },
+       {
+        "uuid": "108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
        }
       ]
      },
@@ -1739,10 +1739,6 @@
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
-       },
-       {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        },
@@ -1753,6 +1749,10 @@
        {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
+        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        }
       ]
      },
