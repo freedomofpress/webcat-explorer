@@ -1,24 +1,43 @@
 {
- "generated_at": "2026-10-21T04:34:28.561Z",
+ "generated_at": "2026-10-21T07:16:45.895Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "340032",
-  "time": "2026-10-21T04:00:09.397029712Z",
-  "app_hash": "069ee3068c2dba87e2a089e65c86699b09b1b926461efa513479690448721f01",
+  "height": "340210",
+  "time": "2026-10-21T07:00:57.015939154Z",
+  "app_hash": "9f66fe0d9b2ff5a05ecefb3f9a80254751cf2da213b83b076056b91d8d1d0aa5",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
-  "https://ginkgo.tlog.mullvad.net": {
-   "size": 5315
-  },
   "https://seasalp.glasklar.is": {
-   "size": 74253
+   "size": 74245,
+   "fetched_at": 1792552886
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 240846
+   "size": 240843,
+   "fetched_at": 1792552892
+  },
+  "https://ginkgo.tlog.mullvad.net": {
+   "size": 5314,
+   "fetched_at": 1792552895
   }
  },
+ "index": [
+  {
+   "log": "log2025-1",
+   "url": "https://log2025-1.rekor.sigstore.dev",
+   "entries": 162232576,
+   "newest": 1792552895,
+   "updated": 1792563466
+  },
+  {
+   "log": "rekor-v1",
+   "url": "https://rekor.sigstore.dev",
+   "entries": 3219577023,
+   "newest": 1791764783,
+   "updated": 1792563466
+  }
+ ],
  "sites": [
   {
    "host": "element.demo.webcat.tech",
@@ -91,6 +110,107 @@
        }
       ],
       "previous": []
+     },
+     "history": {
+      "total": 4,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3081692656,
+        "time": 1791174061,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "schedule",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "schedule",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3081692656"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3031913897,
+        "time": 1790839576,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3031913897"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3031888983,
+        "time": 1790839489,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3031888983"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3031078784,
+        "time": 1790835778,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3031078784"
+       }
+      ]
      }
     }
    },
@@ -175,6 +295,179 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677afcd38da7624947b9ad41d0fe7a8e0af0d96197d8b3e649230421a55df4205e72"
        }
       ]
+     },
+     "history": {
+      "total": 7,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3010939735,
+        "time": 1790738410,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.2"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3010939735"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3010892268,
+        "time": 1790738187,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2-rc1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.2-rc1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2-rc1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.2-rc1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.2-rc1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.2-rc1"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3010892268"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3010718335,
+        "time": 1790737264,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.1"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3010718335"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2582503473,
+        "time": 1787619050,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.0",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.0",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.0"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2582503473"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2532864396,
+        "time": 1787234061,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc3",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.0-rc3",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc3",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.0-rc3",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc3",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.0-rc3"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2532864396"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2521051803,
+        "time": 1787176513,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.0-rc2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.0-rc2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.0-rc2"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2521051803"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2521020240,
+        "time": 1787176176,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/0.2.0-rc1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/legoktm/webgit",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/0.2.0-rc1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/legoktm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/legoktm/webgit/.github/workflows/webcat.yaml@refs/tags/0.2.0-rc1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:legoktm@81392/webgit@1340035818:ref:refs/tags/0.2.0-rc1"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2521020240"
+       }
+      ]
      }
     }
    },
@@ -229,7 +522,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5315,
+        "size": 5314,
         "leaves": [
          [
           3552,
@@ -239,7 +532,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74253,
+        "size": 74245,
         "leaves": [
          [
           58866,
@@ -326,6 +619,105 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
        }
       ]
+     },
+     "history": {
+      "total": 4,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 2447661864,
+        "time": 1786601804,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-integrity-error/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-integrity-error:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2447661864"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2438282928,
+        "time": 1786551129,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-integrity-error/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-integrity-error:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2438282928"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 997338808,
+        "time": 1772120080,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-integrity-error/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=997338808"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 984195066,
+        "time": 1771894696,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-integrity-error",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-integrity-error/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=984195066"
+       }
+      ]
      }
     }
    },
@@ -379,7 +771,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240846,
+        "size": 240843,
         "leaves": [
          [
           239075,
@@ -462,6 +854,409 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a42c9e174c1633a8e96e7acdef11e40cedf0671a0af900fd90362381a9f3da84c"
        }
       ]
+     },
+     "history": {
+      "total": 17,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3152681769,
+        "time": 1791499042,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3152681769"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2232637650,
+        "time": 1784882066,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2232637650"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2127984521,
+        "time": 1783603515,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2127984521"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2123483765,
+        "time": 1783564709,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2123483765"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1682919393,
+        "time": 1780242110,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1682919393"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1653913048,
+        "time": 1779963396,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1653913048"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1652567523,
+        "time": 1779953970,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1652567523"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1475748449,
+        "time": 1778263430,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1475748449"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1362334208,
+        "time": 1776948395,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1362334208"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1347809381,
+        "time": 1776759489,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1347809381"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1340755878,
+        "time": 1776627349,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1340755878"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1258559543,
+        "time": 1775689724,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1258559543"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1202283443,
+        "time": 1774928064,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1202283443"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1059402979,
+        "time": 1772951282,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1059402979"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1059402604,
+        "time": 1772951194,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1059402604"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1059243993,
+        "time": 1772943273,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1059243993"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1058965877,
+        "time": 1772934367,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1058965877"
+       }
+      ]
      }
     }
    },
@@ -516,7 +1311,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240846,
+        "size": 240843,
         "leaves": [
          [
           161799,
@@ -577,7 +1372,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240846,
+        "size": 240843,
         "leaves": [
          [
           204430,
@@ -661,6 +1456,10 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af11396b535937d35f1adb0a073759e6318516ebccd5cc44edcd2ae720fc9e49b"
        }
       ]
+     },
+     "history": {
+      "total": 0,
+      "entries": []
      }
     }
    },
@@ -714,7 +1513,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5315,
+        "size": 5314,
         "leaves": [
          [
           3732,
@@ -744,7 +1543,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74253,
+        "size": 74245,
         "leaves": [
          [
           60281,
@@ -829,7 +1628,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5315,
+        "size": 5314,
         "leaves": [
          [
           4447,
@@ -843,7 +1642,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74253,
+        "size": 74245,
         "leaves": [
          [
           67013,
@@ -956,6 +1755,81 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ]
+     },
+     "history": {
+      "total": 3,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 2438260850,
+        "time": 1786550884,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-test/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-test:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2438260850"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 955005874,
+        "time": 1771253788,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-test/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=955005874"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 954347513,
+        "time": 1771213605,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-test",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-test/.github/workflows/generate-sign-sigstore-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=954347513"
+       }
+      ]
      }
     }
    },
@@ -1028,6 +1902,131 @@
        {
         "uuid": "108e9186e8c5677ae0b4c8f1dd564853244c748b2ea8ccd1420a7866544a1e743c5754709da2243f",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae0b4c8f1dd564853244c748b2ea8ccd1420a7866544a1e743c5754709da2243f"
+       }
+      ]
+     },
+     "history": {
+      "total": 5,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 2982234914,
+        "time": 1790597463,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.4",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign for WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.4",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.4",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.4",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/osservatorionessuno",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.4",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:osservatorionessuno@139704480/uploader@1391015579:ref:refs/tags/v0.4"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2982234914"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2982224246,
+        "time": 1790597360,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.3",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign for WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.3",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.3",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.3",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/osservatorionessuno",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.3",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:osservatorionessuno@139704480/uploader@1391015579:ref:refs/tags/v0.3"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2982224246"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2981973443,
+        "time": 1790595053,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign for WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/osservatorionessuno",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:osservatorionessuno@139704480/uploader@1391015579:ref:refs/tags/v0.2"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2981973443"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2981970078,
+        "time": 1790595014,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign for WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/osservatorionessuno",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:osservatorionessuno@139704480/uploader@1391015579:ref:refs/tags/v0.2"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2981970078"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2981940435,
+        "time": 1790594532,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign for WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/osservatorionessuno/uploader",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/osservatorionessuno",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/osservatorionessuno/uploader/.github/workflows/webcat.yml@refs/tags/v0.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:osservatorionessuno@139704480/uploader@1391015579:ref:refs/tags/v0.2"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2981940435"
        }
       ]
      }
@@ -1103,6 +2102,1773 @@
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ab74c4f235abf311b18e83c1cea80acd8313fc40c5fca29b138d9e0d7fa20733b"
        }
       ]
+     },
+     "history": {
+      "total": 75,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3174316071,
+        "time": 1791590242,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.14"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3174316071"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3174283446,
+        "time": 1791590063,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3174283446"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3173601003,
+        "time": 1791587524,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/update-tinfoil-icons",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/update-tinfoil-icons",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/update-tinfoil-icons",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/update-tinfoil-icons",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/update-tinfoil-icons",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/update-tinfoil-icons"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3173601003"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3150182193,
+        "time": 1791473118,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.13"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3150182193"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3142915281,
+        "time": 1791441848,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3142915281"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3130879671,
+        "time": 1791375308,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/pages-router-static-csp",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/pages-router-static-csp",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/pages-router-static-csp",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/pages-router-static-csp",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/pages-router-static-csp",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/pages-router-static-csp"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3130879671"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2886234955,
+        "time": 1789744439,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.12"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2886234955"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2886225313,
+        "time": 1789744291,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2886225313"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2883509995,
+        "time": 1789713432,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/feat/verification-expandable-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2883509995"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2883484592,
+        "time": 1789712538,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-expandable-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/feat/verification-expandable-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2883484592"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2595068714,
+        "time": 1787717688,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.11"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2595068714"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2595061259,
+        "time": 1787717664,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2595061259"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2595026531,
+        "time": 1787717536,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/mobile-layout-loading",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/mobile-layout-loading",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/mobile-layout-loading",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/mobile-layout-loading",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/mobile-layout-loading",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/mobile-layout-loading"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2595026531"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2499897035,
+        "time": 1787015336,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.10"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2499897035"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2499893689,
+        "time": 1787015310,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2499893689"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2499880958,
+        "time": 1787015230,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-status-icons",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/verification-status-icons",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-status-icons",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/verification-status-icons",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/verification-status-icons",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/feat/verification-status-icons"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2499880958"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2492098629,
+        "time": 1786910020,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.9"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2492098629"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2492086355,
+        "time": 1786909965,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2492086355"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2483083476,
+        "time": 1786846604,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2483083476"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2483048313,
+        "time": 1786846392,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2483048313"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2483019005,
+        "time": 1786846246,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2483019005"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2482946820,
+        "time": 1786845603,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2482946820"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2482771826,
+        "time": 1786844729,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2482771826"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2482765702,
+        "time": 1786844691,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2482765702"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2477406855,
+        "time": 1786810680,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/ui-loading-and-cards",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/fix/ui-loading-and-cards"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2477406855"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473219505,
+        "time": 1786773919,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.8"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473219505"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473216936,
+        "time": 1786773854,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473216936"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473216579,
+        "time": 1786773837,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/atomic-verification-render",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/perf/atomic-verification-render",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/atomic-verification-render",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/perf/atomic-verification-render",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/atomic-verification-render",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/perf/atomic-verification-render"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473216579"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473154708,
+        "time": 1786772503,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.7"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473154708"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473145654,
+        "time": 1786772132,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473145654"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473136140,
+        "time": 1786771917,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/stable-verification-loading",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/perf/stable-verification-loading",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/stable-verification-loading",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/perf/stable-verification-loading",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/perf/stable-verification-loading",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/perf/stable-verification-loading"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473136140"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2470490527,
+        "time": 1786750992,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.6"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2470490527"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2470485964,
+        "time": 1786750937,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2470485964"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2470472744,
+        "time": 1786750842,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/refresh-verification-center-ui",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/refresh-verification-center-ui",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/refresh-verification-center-ui",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/refresh-verification-center-ui",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/refresh-verification-center-ui",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/feat/refresh-verification-center-ui"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2470472744"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1740487837,
+        "time": 1780772614,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.5"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1740487837"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1740486908,
+        "time": 1780772576,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1740486908"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1740465307,
+        "time": 1780771901,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/new-icons",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/new-icons",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/new-icons",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/new-icons",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/new-icons",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/feat/new-icons"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1740465307"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1141610600,
+        "time": 1773976658,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1141610600"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1141609155,
+        "time": 1773976644,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1141609155"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1141442646,
+        "time": 1773975514,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/generalize-ui",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/feat/generalize-ui",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/generalize-ui",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/feat/generalize-ui",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/feat/generalize-ui",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1141442646"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1077840142,
+        "time": 1773194310,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1077840142"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1077816086,
+        "time": 1773194012,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1077816086"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1077775197,
+        "time": 1773193508,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/sigstore-prefix-claims",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/sigstore-prefix-claims",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/sigstore-prefix-claims",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/sigstore-prefix-claims",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/sigstore-prefix-claims",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1077775197"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1072213626,
+        "time": 1773121975,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1072213626"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1072211777,
+        "time": 1773121939,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1072211777"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1072209048,
+        "time": 1773121824,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1072209048"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1070889953,
+        "time": 1773113271,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/enrollment-build-branch",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/enrollment-build-branch",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/enrollment-build-branch",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/enrollment-build-branch",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/enrollment-build-branch",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1070889953"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069733478,
+        "time": 1773103349,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/release-hidden-files",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/release-hidden-files",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/release-hidden-files",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/release-hidden-files",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/release-hidden-files",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069733478"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069227938,
+        "time": 1773098954,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069227938"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069226818,
+        "time": 1773098917,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069226818"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069226568,
+        "time": 1773098905,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/workflow",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/fix/workflow",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/workflow",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/fix/workflow",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/fix/workflow",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069226568"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069198294,
+        "time": 1773098665,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069198294"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069183426,
+        "time": 1773098597,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069183426"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1056184771,
+        "time": 1772871030,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1056184771"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1056175053,
+        "time": 1772870220,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1056175053"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1056139020,
+        "time": 1772869660,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1056139020"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1056129192,
+        "time": 1772869275,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1056129192"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1053023786,
+        "time": 1772837411,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1053023786"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1053002206,
+        "time": 1772836839,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1053002206"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1052926893,
+        "time": 1772836196,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1052926893"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1028455109,
+        "time": 1772626242,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1028455109"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021615887,
+        "time": 1772583823,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021615887"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021569425,
+        "time": 1772583543,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021569425"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021524102,
+        "time": 1772583273,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021524102"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021502979,
+        "time": 1772583138,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021502979"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021470769,
+        "time": 1772582946,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021470769"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021443967,
+        "time": 1772582767,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021443967"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021390712,
+        "time": 1772582428,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021390712"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021357181,
+        "time": 1772582243,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021357181"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021297208,
+        "time": 1772581895,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021297208"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021231137,
+        "time": 1772581540,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021231137"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1021206980,
+        "time": 1772581428,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/chore/vercel-deploy",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1021206980"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1006597226,
+        "time": 1772382330,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT manifest.json and bundle.json",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1006597226"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1005016106,
+        "time": 1772294137,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT manifest.json and bundle.json",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1005016106"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1005015584,
+        "time": 1772293928,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT manifest.json and bundle.json",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/webcat-manifest.yaml@refs/heads/webcat-test",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1005015584"
+       }
+      ]
      }
     }
    },
@@ -1176,6 +3942,366 @@
        {
         "uuid": "108e9186e8c5677ab30c7016d81e9de6a21a32395212372e8de95f2c87e7b36420b1181a3ac0d2e2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ab30c7016d81e9de6a21a32395212372e8de95f2c87e7b36420b1181a3ac0d2e2"
+       }
+      ]
+     },
+     "history": {
+      "total": 15,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3174316071,
+        "time": 1791590242,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.14",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.14"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3174316071"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3150182193,
+        "time": 1791473118,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.13",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.13"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3150182193"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2886234955,
+        "time": 1789744439,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.12",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.12"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2886234955"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2595068714,
+        "time": 1787717688,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.11",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.11"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2595068714"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2499897035,
+        "time": 1787015336,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.10",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.10"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2499897035"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2492098629,
+        "time": 1786910020,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.9",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.9"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2492098629"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473219505,
+        "time": 1786773919,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.8",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.8"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473219505"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2473154708,
+        "time": 1786772503,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.7",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.7"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2473154708"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 2470490527,
+        "time": 1786750992,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.6",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.6"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=2470490527"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1740487837,
+        "time": 1780772614,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.5",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/tags/v0.0.5"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1740487837"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1141610600,
+        "time": 1773976658,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.4",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1141610600"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1077840142,
+        "time": 1773194310,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.3",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1077840142"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1072213626,
+        "time": 1773121975,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.2",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1072213626"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069227938,
+        "time": 1773098954,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069227938"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 1069198294,
+        "time": 1773098665,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/tags/v0.0.1",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=1069198294"
        }
       ]
      }
@@ -1257,6 +4383,149 @@
        {
         "uuid": "108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a98cabd74d41bd0adec020befeae2bd79386560c6b2dbc06f583a082f98ccc7a5"
+       }
+      ]
+     },
+     "history": {
+      "total": 6,
+      "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 992232056,
+        "time": 1772045317,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=992232056"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 992231656,
+        "time": 1772045254,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=992231656"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 992116946,
+        "time": 1772041497,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=992116946"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 971091997,
+        "time": 1771533456,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=971091997"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 971012114,
+        "time": 1771532755,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=971012114"
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 970989156,
+        "time": 1771532488,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=970989156"
        }
       ]
      }

@@ -10,7 +10,7 @@
 <body>
 <main>
 <h1>WEBCAT <span>enrollment explorer</span></h1>
-<p class="meta" id="meta">Loading data.json…</p>
+<div class="meta" id="meta">Loading data.json…</div>
 <div class="stats" id="stats"></div>
 <div class="bar">
   <input type="search" id="q" placeholder="Search host, type, status, identity, repo, log…" autocomplete="off">
@@ -20,7 +20,7 @@
 <div class="head" id="head"><button data-k="host">Host</button><button data-k="type">Type</button><button data-k="status">Status</button><button data-k="signer">Signer / log</button><button data-k="updated">Updated</button></div>
 <div id="list"></div>
 <div class="pager" id="pager"></div>
-<p class="note">Daily build. Sigsum logs scanned daily. Chain history and Sigstore history: TBD. <a href="/data.json">data.json</a></p>
+<p class="note">Daily build. Sigstore and Sigsum history from the <a href="https://monitor-api.webcat.tech">webcat log auditor</a>. Chain history: TBD. <a href="/data.json">data.json</a></p>
 </main>
 </body>
 </html>

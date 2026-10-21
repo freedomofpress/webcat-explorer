@@ -11,7 +11,7 @@ import {
   sha256, canonicalize, validateManifest, validateSigstoreEnrollment,
   validateSigsumEnrollment, verifySigstoreManifest, verifySigsumManifest,
 } from "./verify.mjs";
-import { scanLogs } from "./scan.mjs";
+import { auditorStatus, sigstoreHistory, sigsumHistory } from "./history.mjs";
 
 // These values match the extension's config.ts defaults.
 const ENDPOINT = "https://webcat.freedom.press/";
@@ -197,7 +197,14 @@ async function sigstoreRecords(enrollment, bundle, prev) {
       by_hash[name] = { error: summarize(e) };
     }
   }
-  return { sigstore: { signers, entries, by_hash } };
+  // The full history comes from the log auditor index, not from the bundle.
+  let history;
+  try {
+    history = await sigstoreHistory(enrollment.claims);
+  } catch (e) {
+    history = { error: summarize(e) };
+  }
+  return { sigstore: { signers, entries, by_hash, history } };
 }
 
 // 4. Inspect one site. This mirrors OriginState.verifyEnrollment and verifyManifest in the extension.
@@ -250,23 +257,25 @@ console.log(`list verified: ${leaves.length} leaves at height ${block.height}`);
 const sites = await Promise.all(leaves.map((l) => inspect(l).catch((e) => ({ host: extractHostname(l[0]), canonical: l[0], error: "BUILD_ERROR", detail: summarize(e) }))));
 sites.sort((a, b) => a.host.localeCompare(b.host));
 
-// 5. Scan the Sigsum logs for every enrolled signer key.
-const wanted = new Map();
-for (const s of sites) for (const r of s.transparency?.sigsum ?? []) {
-  for (const url of Object.values(s.enrollment.logs)) (wanted.get(url) ?? wanted.set(url, new Set()).get(url)).add(r.signer_key_hash);
-}
+// 5. Read Sigsum history for every enrolled signer key, and the auditor's index freshness.
 const logs = {};
+let index = [];
 try {
-  const scan = await scanLogs(wanted, new URL("./.cache/sigsum-scan.json", import.meta.url));
-  for (const [url, l] of Object.entries(scan)) logs[url] = { size: l.size };
+  const status = await auditorStatus();
+  const urls = Object.fromEntries(status.sigsum.map((l) => [l.log, l.url]));
+  for (const l of status.sigsum) logs[l.url] = { size: l.size, fetched_at: l.fetched_at };
+  index = status.rekor.map((l) => ({ log: l.log, url: l.url, entries: l.entries, newest: l.newest, updated: l.updated }));
   for (const s of sites) for (const r of s.transparency?.sigsum ?? []) {
-    r.history = Object.values(s.enrollment.logs).map((url) => ({ log_url: url, size: scan[url].size, leaves: scan[url].leaves[r.signer_key_hash] ?? [] }));
+    const h = await sigsumHistory(r.signer);
+    const byLog = {};
+    for (const l of h.leaves) (byLog[l.log] ??= []).push([l.index, l.checksum]);
+    r.history = Object.entries(byLog).map(([log, leaves]) => ({ log_url: urls[log], size: logs[urls[log]]?.size ?? 0, leaves }));
   }
 } catch (e) {
-  console.error("sigsum scan failed:", e);
+  console.error("auditor API failed:", e);
   logs.error = summarize(e);
 }
 
-const data = { generated_at: new Date().toISOString(), block, logs, sites };
+const data = { generated_at: new Date().toISOString(), block, logs, index, sites };
 await writeFile(new URL("./site/data.json", import.meta.url), JSON.stringify(data, null, 1));
 for (const s of sites) console.log(`${s.error ? "FAIL" : " ok "} ${s.host} ${s.enrollment?.type ?? ""} ${s.error ?? ""} ${s.detail ?? ""}`);

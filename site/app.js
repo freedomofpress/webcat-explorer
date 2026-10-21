@@ -109,7 +109,7 @@ function detail(s) {
       ["leaf", r.leaf_url ? a(r.leaf_url, `#${r.leaf_index}`) : r.leaf_index], ["tree size", r.tree_size], ["cosignatures", r.cosignatures],
       ["present in log", r.in_log === undefined ? "" : presence(r.in_log)], ["error", r.error && `<b class="fail">${esc(r.error)}</b>`],
     ])).join("<hr>"));
-    html += sub(`Sigsum history <span class="dim">· ${total} leaves by this site's keys</span>`, `<p class="hint">Every leaf in the enrolled logs signed by this site's keys, from the daily log scan. A leaf is only a checksum, so signatures other than WEBCAT manifests may appear.</p>` +
+    html += sub(`Sigsum history <span class="dim">· ${total} leaves by this site's keys</span>`, `<p class="hint">Every leaf in the indexed Sigsum logs signed by this site's keys, from the webcat log auditor index. A leaf is only a checksum, so signatures other than WEBCAT manifests may appear.</p>` +
       t.sigsum.map((r) => (r.history ?? []).map((h) => {
         const leaves = [...h.leaves].reverse();
         return dl([[new URL(h.log_url).hostname, leaves.length ? leaves.map(([i]) => a(`${h.log_url}/get-leaves/${i}/${i + 1}`, `#${i}`) + (i === r.leaf_index ? ' <b class="ok">current</b>' : "")).join(", ") : `<span class="dim">none of ${h.size.toLocaleString()} leaves</span>`]]);
@@ -125,12 +125,18 @@ function detail(s) {
       ["cert issued", esc(x.not_before)], ["error", x.error && `<b class="fail">${esc(x.error)}</b>`],
     ])).join("<hr>"));
     const byHash = Object.entries(t.sigstore.by_hash).map(([k, v]) => [`${k} manifest`, v.error ? `<b class="fail">${esc(v.error)}</b>` : v.length ? v.map((x) => a(x.url, x.uuid.slice(0, 12) + "…")).join(", ") : "none"]);
+    const h = t.sigstore.history;
+    if (h) html += sub(`Sigstore history <span class="dim">· ${h.error ? "unavailable" : `${h.total} entries matching this site's claims`}</span>`,
+      h.error ? `<b class="fail">${esc(h.error)}</b>` : `<p class="hint">Every Rekor entry (v1 and v2) whose certificate satisfies the enrollment claims, from the daily index of the webcat log auditor. Signatures other than WEBCAT manifests may appear, since claims describe the signer, not the artifact.</p>` +
+        `<table class="hist"><tr><th>time</th><th>log</th><th>index</th><th>identity</th><th>trigger</th><th>ref</th></tr>` +
+        h.entries.map((r) => `<tr><td>${new Date(r.time * 1000).toISOString().slice(0, 16).replace("T", " ")}</td><td>${esc(r.log)}</td><td>${r.search_url ? a(r.search_url, String(r.log_index)) : r.log_index}</td><td class="dim">${esc((r.identity || "").replace(/^https:\/\/github\.com\//, ""))}</td><td>${esc(r.ext?.["1.3.6.1.4.1.57264.1.20"] ?? r.ext?.["1.3.6.1.4.1.57264.1.2"] ?? "")}</td><td>${esc(r.ext?.["1.3.6.1.4.1.57264.1.14"] ?? r.ext?.["1.3.6.1.4.1.57264.1.6"] ?? "")}</td></tr>`).join("") +
+        `</table>`);
     html += sub("Rekor entries", t.sigstore.entries.map((r) => dl([
       ["log", a(r.log_url, new URL(r.log_url ?? "https://x").hostname)], ["index", r.search_url ? a(r.search_url, r.log_index) : esc(r.log_index)],
       ["integrated", ts(r.integrated_time)], ["uuid", short(r.uuid, 12)], ["present in log", presence(r.found)], ["error", r.error && `<b class="fail">${esc(r.error)}</b>`],
     ])).join("<hr>") + `<hr>` + dl(byHash));
   }
-  html += `<p class="tbds">${tbd("Chain history", "Enrollment changes on the WEBCAT chain (first enrollment, hash updates, removals) are not yet tracked; only the current verified list state is shown.")} ${t.sigstore ? tbd("Sigstore history", "Rekor has no search by signing identity; a full history needs the BigQuery mirror of Rekor or a log monitor.") : ""}</p>`;
+  html += `<p class="tbds">${tbd("Chain history", "Enrollment changes on the WEBCAT chain (first enrollment, hash updates, removals) are not yet tracked; only the current verified list state is shown.")} </p>`;
   return html;
 }
 
@@ -155,9 +161,21 @@ function row(s, open) {
 const data = await (await fetch("/data.json", { cache: "no-store" })).json();
 const sites = data.sites.map((s) => ({ ...s, _text: JSON.stringify(s).toLowerCase() })); // _text backs the search box.
 const count = (f) => sites.filter(f).length;
-const logsLine = Object.entries(data.logs ?? {}).filter(([k]) => k !== "error").map(([u, l]) => `${a(u, new URL(u).hostname)} ${l.size.toLocaleString()} leaves`).join(" · ");
-$("meta").innerHTML = `block <b title="${esc(data.block.time)}">${esc(data.block.height)}</b> · ${code(data.block.chain_id)} · ${esc(data.block.signed_power)} validators · built ${esc(data.generated_at.slice(0, 16).replace("T", " "))} UTC${logsLine ? ` · Sigsum: ${logsLine}` : ""}${data.logs?.error ? ` · <b class="fail">Sigsum scan failed: ${esc(data.logs.error)}</b>` : ""}
-<details><summary>hashes</summary><div>app_hash ${code(data.block.app_hash)}<br>canonical root ${code(data.block.canonical_root_hash)}</div></details>`;
+// The freshness strip shows when each dataset was last updated. A dataset more than a day behind the build is flagged.
+const built = Date.parse(data.generated_at) / 1000;
+const when = (t) => new Date(t * 1000).toISOString().slice(0, 16).replace("T", " ");
+const fresh = (label, href, t, extra = "") => {
+  const lag = Math.floor((built - t) / 86400);
+  return `<span class="src${lag >= 1 ? " stale" : ""}" title="${esc(lag >= 1 ? `${lag} days behind this build` : "current")}">${a(href, label)} ${esc(when(t))}${extra}${lag >= 1 ? ` <b>${lag}d behind</b>` : ""}</span>`;
+};
+const sources = [
+  fresh("WEBCAT list", "https://webcat.freedom.press/list.json", Date.parse(data.block.time) / 1000, ` <span class="dim">block ${esc(data.block.height)}</span>`),
+  ...(data.index ?? []).map((l) => fresh(`Rekor ${l.log}`, l.url, l.newest, ` <span class="dim">newest entry</span>`)),
+  ...Object.entries(data.logs ?? {}).filter(([k]) => k !== "error").map(([u, l]) => fresh(new URL(u).hostname, u, l.fetched_at, ` <span class="dim">${l.size.toLocaleString()} leaves</span>`)),
+];
+$("meta").innerHTML = `built ${esc(when(built))} UTC · ${code(data.block.chain_id)} · ${esc(data.block.signed_power)} validators
+<details><summary>hashes</summary><div>app_hash ${code(data.block.app_hash)}<br>canonical root ${code(data.block.canonical_root_hash)}</div></details>
+<div class="sources">${sources.join("")}</div>${data.logs?.error ? `<b class="fail">auditor API failed: ${esc(data.logs.error)}</b>` : ""}`;
 $("stats").innerHTML = [[sites.length, "enrolled sites", ""], [count((s) => !s.error), "verifying", "ok"], [count((s) => s.error), "failing", "fail"],
   [`${count((s) => s.enrollment?.type === "sigsum")} / ${count((s) => s.enrollment?.type === "sigstore")}`, "sigsum / sigstore", ""],
   [sites.flatMap((s) => s.transparency?.sigsum ?? []).flatMap((r) => r.history ?? []).reduce((acc, h) => acc + h.leaves.length, 0), "sigsum leaves by enrolled keys", ""]]

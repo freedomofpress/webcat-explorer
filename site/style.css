@@ -55,6 +55,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 
 /* Header line and stat tiles. */
 .meta { color: var(--color-text-light); font-size: 0.85rem; margin: var(--spacing-xs) 0 var(--spacing-md); }
+.sources { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: var(--spacing-xs); }
+.src { padding: 0.15rem 0.6rem; border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-bg-alt); white-space: nowrap; }
+.src.stale { border-color: var(--color-warn); }
+.src.stale b { color: var(--color-warn); }
 .meta details { display: inline; } .meta summary { display: inline; cursor: pointer; color: var(--color-primary); } .meta details div { margin-top: 0.3rem; }
 .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: var(--spacing-sm); margin-bottom: var(--spacing-md); }
 .stat { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: 0.8rem 1rem; }
@@ -117,3 +121,6 @@ hr { border: 0; border-top: 1px dashed var(--color-border); margin: 0.75rem 0; }
 .note { color: var(--color-text-light); font-size: 0.8rem; border-top: 1px solid var(--color-border); padding-top: var(--spacing-sm); margin-top: var(--spacing-lg); }
 
 @media (max-width: 50rem) { .head { display: none; } .site > summary { grid-template-columns: 1fr 1fr; } .top { grid-template-columns: 1fr; } }
+
+table.hist { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+table.hist th, table.hist td { text-align: left; padding: 2px 6px; border-bottom: 1px solid var(--color-border); }
