@@ -58,11 +58,10 @@ function checks(s) {
 // facts() picks the handful of values a reader needs first. The layout depends on the signer kind.
 function facts(s) {
   const e = s.enrollment ?? {}, t = s.transparency ?? {}, m = s.manifest ?? {};
-  const signedAt = s.valid_until ? day(s.valid_until - (e.max_age ?? 0)) : "";
   const f = [["Type", esc(e.type)], ["Manifest", m.version ? `${esc(m.version)} <span class="dim">· ${m.files} files</span>` : ""]];
   if (t.sigstore) {
     const x = t.sigstore.signers[0] ?? {}, r = t.sigstore.entries[0];
-    const logged = r ? `${a(r.search_url ?? r.log_url, new URL(r.log_url ?? "https://x").hostname)} <span class="dim">· ${day(r.integrated_time)}</span>` : "";
+    const logged = r ? `${a(r.search_url ?? r.log_url, new URL(r.log_url ?? "https://x").hostname)} <span class="dim">· #${r.log_index}</span>` : "";
     if (x.repo) {
       f.push(["Signed by", a(x.repo, repoName(x.repo))], ["Via", issuerName(x.issuer)], ["Ref", shortRef(x.ref)],
         ["Workflow", x.workflow ? a(x.workflow.file, x.workflow.file.split("/").pop()) : x.build_config ? a(x.build_config, repoName(x.build_config).split("@")[0].split("//").pop()) : esc(x.build_signer)],
@@ -75,13 +74,17 @@ function facts(s) {
     f.push(["Logged in", logged]);
   } else if (t.sigsum) {
     const r = t.sigsum[0] ?? {};
-    f.push(["Signers", `${e.signers?.length ?? "?"} keys <span class="dim">· threshold ${e.threshold}</span>`],
-      ["Logged in", r.log_url ? `${a(r.leaf_url, new URL(r.log_url).hostname)} <span class="dim">· leaf #${r.leaf_index}</span>` : ""],
-      ["Witnesses", r.cosignatures], ["Signed", signedAt]);
+    f.push(["Signed by", `${e.signers?.length ?? "?"} keys <span class="dim">· threshold ${e.threshold}</span>`],
+      ["Logged in", r.log_url ? `${a(r.leaf_url, new URL(r.log_url).hostname)} <span class="dim">· #${r.leaf_index}</span>` : ""],
+      ["Witnesses", r.cosignatures]);
   }
-  f.push(["Expires", day(s.valid_until)]);
+  f.push(["Signed", day(s.signed_at)], ["Expires", day(s.valid_until)]);
   return `<dl class="facts">${f.filter(([, v]) => v).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>`;
 }
+
+// history() renders a Signing history section: a count, one hint, and a table, newest first.
+const history = (total, what, hint, cols, rows) => sub(`Signing history <span class="dim">· ${total} entries ${what}</span>`,
+  `<p class="hint">${hint} Source: the webcat log auditor.</p><table class="hist"><tr>${cols.map((c) => `<th>${c}</th>`).join("")}</tr>${rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</table>`);
 
 // detail() renders the expanded card: facts, checks, then collapsed sections.
 function detail(s) {
@@ -101,22 +104,24 @@ function detail(s) {
     ["files", `${s.manifest.files} (${s.manifest.wasm} wasm, ${s.manifest.extra_csp} extra CSP paths)`],
     ["default_csp", code(s.manifest.default_csp)], ["valid until", ts(s.valid_until)],
   ]));
-  if (t.error) html += sub("Transparency", `<b class="fail">${esc(t.error)}</b>`);
+  // Both signing types render the same three sections in the same order: Signer, Log entry, Signing history.
+  if (t.error) html += sub("Log entry", `<b class="fail">${esc(t.error)}</b>`);
   if (t.sigsum) {
-    const total = t.sigsum.flatMap((r) => r.history ?? []).reduce((n, h) => n + h.leaves.length, 0);
-    html += sub("Sigsum records", t.sigsum.map((r) => dl([
-      ["signer key", short(r.signer, 12)], ["log", r.log_url ? a(r.log_url) : `<b class="warn">unknown</b> ${short(r.log_key_hash)}`],
-      ["leaf", r.leaf_url ? a(r.leaf_url, `#${r.leaf_index}`) : r.leaf_index], ["tree size", r.tree_size], ["cosignatures", r.cosignatures],
+    html += sub("Signer", dl([
+      ["keys", t.sigsum.map((r) => short(r.signer, 12)).join("<br>")], ["threshold", e.threshold],
+    ]));
+    html += sub("Log entry", t.sigsum.map((r) => dl([
+      ["log", r.log_url ? a(r.log_url, new URL(r.log_url).hostname) : `<b class="warn">unknown</b> ${short(r.log_key_hash)}`],
+      ["index", r.leaf_url ? a(r.leaf_url, r.leaf_index) : esc(r.leaf_index)], ["tree size", r.tree_size], ["witnesses", r.cosignatures],
       ["present in log", r.in_log === undefined ? "" : presence(r.in_log)], ["error", r.error && `<b class="fail">${esc(r.error)}</b>`],
     ])).join("<hr>"));
-    html += sub(`Sigsum history <span class="dim">· ${total} leaves by this site's keys</span>`, `<p class="hint">Every leaf in the indexed Sigsum logs signed by this site's keys, from the webcat log auditor index. A leaf is only a checksum, so signatures other than WEBCAT manifests may appear.</p>` +
-      t.sigsum.map((r) => (r.history ?? []).map((h) => {
-        const leaves = [...h.leaves].reverse();
-        return dl([[new URL(h.log_url).hostname, leaves.length ? leaves.map(([i]) => a(`${h.log_url}/get-leaves/${i}/${i + 1}`, `#${i}`) + (i === r.leaf_index ? ' <b class="ok">current</b>' : "")).join(", ") : `<span class="dim">none of ${h.size.toLocaleString()} leaves</span>`]]);
-      }).join("")).join("<hr>"));
+    const rows = t.sigsum.flatMap((r) => (r.history ?? []).flatMap((h) => h.leaves.map(([i, sum]) => ({ log: new URL(h.log_url).hostname, url: `${h.log_url}/get-leaves/${i}/${i + 1}`, index: i, sum, current: i === r.leaf_index && h.log_url === r.log_url }))));
+    rows.sort((x, y) => x.log.localeCompare(y.log) || y.index - x.index);
+    html += history(rows.length, "signed by this site's keys", "Every entry in the indexed Sigsum logs signed by this site's keys. An entry holds only a checksum, so signatures other than WEBCAT manifests may appear.",
+      ["log", "index", "checksum"], rows.map((r) => [esc(r.log), a(r.url, r.index) + (r.current ? ' <b class="ok">current</b>' : ""), short(r.sum, 12)]));
   }
   if (t.sigstore) {
-    html += sub("Sigstore signer", t.sigstore.signers.map((x) => dl([
+    html += sub("Signer", t.sigstore.signers.map((x) => dl([
       ["identity", `${esc(x.identity)} <span class="dim">(${esc(x.identity_kind)})</span>`], ["issuer", esc(x.issuer)],
       ["source repo", a(x.repo)], ["ref", esc(x.ref)],
       ["commit", x.sha && x.repo ? a(`${x.repo}/commit/${x.sha}`, x.sha.slice(0, 12)) : esc(x.sha)],
@@ -124,17 +129,16 @@ function detail(s) {
       ["workflow links", x.workflow ? `${a(x.workflow.file, "file")} · ${a(x.workflow.runs, "all runs")}` : ""],
       ["cert issued", esc(x.not_before)], ["error", x.error && `<b class="fail">${esc(x.error)}</b>`],
     ])).join("<hr>"));
-    const byHash = Object.entries(t.sigstore.by_hash).map(([k, v]) => [`${k} manifest`, v.error ? `<b class="fail">${esc(v.error)}</b>` : v.length ? v.map((x) => a(x.url, x.uuid.slice(0, 12) + "…")).join(", ") : "none"]);
-    const h = t.sigstore.history;
-    if (h) html += sub(`Sigstore history <span class="dim">· ${h.error ? "unavailable" : `${h.total} entries matching this site's claims`}</span>`,
-      h.error ? `<b class="fail">${esc(h.error)}</b>` : `<p class="hint">Every Rekor entry (v1 and v2) whose certificate satisfies the enrollment claims, from the daily index of the webcat log auditor. Signatures other than WEBCAT manifests may appear, since claims describe the signer, not the artifact.</p>` +
-        `<table class="hist"><tr><th>time</th><th>log</th><th>index</th><th>identity</th><th>trigger</th><th>ref</th></tr>` +
-        h.entries.map((r) => `<tr><td>${new Date(r.time * 1000).toISOString().slice(0, 16).replace("T", " ")}</td><td>${esc(r.log)}</td><td>${r.search_url ? a(r.search_url, String(r.log_index)) : r.log_index}</td><td class="dim">${esc((r.identity || "").replace(/^https:\/\/github\.com\//, ""))}</td><td>${esc(r.ext?.["1.3.6.1.4.1.57264.1.20"] ?? r.ext?.["1.3.6.1.4.1.57264.1.2"] ?? "")}</td><td>${esc(r.ext?.["1.3.6.1.4.1.57264.1.14"] ?? r.ext?.["1.3.6.1.4.1.57264.1.6"] ?? "")}</td></tr>`).join("") +
-        `</table>`);
-    html += sub("Rekor entries", t.sigstore.entries.map((r) => dl([
+    const sameManifest = Object.entries(t.sigstore.by_hash).map(([k, v]) => [`${k} manifest in Rekor`, v.error ? `<b class="fail">${esc(v.error)}</b>` : v.length ? v.map((x) => a(x.url, x.uuid.slice(0, 12) + "…")).join(", ") : "none"]);
+    html += sub("Log entry", t.sigstore.entries.map((r) => dl([
       ["log", a(r.log_url, new URL(r.log_url ?? "https://x").hostname)], ["index", r.search_url ? a(r.search_url, r.log_index) : esc(r.log_index)],
-      ["integrated", ts(r.integrated_time)], ["uuid", short(r.uuid, 12)], ["present in log", presence(r.found)], ["error", r.error && `<b class="fail">${esc(r.error)}</b>`],
-    ])).join("<hr>") + `<hr>` + dl(byHash));
+      ["logged", ts(r.integrated_time)], ["uuid", short(r.uuid, 12)], ["present in log", presence(r.found)], ["error", r.error && `<b class="fail">${esc(r.error)}</b>`],
+    ])).join("<hr>") + `<hr>` + dl(sameManifest));
+    const h = t.sigstore.history, current = new Set(t.sigstore.entries.map((r) => String(r.log_index)));
+    if (h?.error) html += sub(`Signing history <span class="dim">· unavailable</span>`, `<b class="fail">${esc(h.error)}</b>`);
+    else if (h) html += history(h.total, "matching this site's claims", "Every Rekor entry, v1 and v2, whose certificate satisfies the enrollment claims. Claims describe the signer, not the artifact, so signatures other than WEBCAT manifests may appear.",
+      ["logged", "log", "index", "identity", "trigger", "ref"], h.entries.map((r) => [ts(r.time), esc(r.log), (r.search_url ? a(r.search_url, r.log_index) : esc(r.log_index)) + (current.has(String(r.log_index)) ? ' <b class="ok">current</b>' : ""),
+        `<span class="dim">${esc(repoName(r.identity || ""))}</span>`, esc(r.ext?.["1.3.6.1.4.1.57264.1.20"] ?? r.ext?.["1.3.6.1.4.1.57264.1.2"] ?? ""), esc(shortRef(r.ext?.["1.3.6.1.4.1.57264.1.14"] ?? r.ext?.["1.3.6.1.4.1.57264.1.6"] ?? ""))]));
   }
   html += `<p class="tbds">${tbd("Chain history", "Enrollment changes on the WEBCAT chain (first enrollment, hash updates, removals) are not yet tracked; only the current verified list state is shown.")} </p>`;
   return html;
@@ -178,7 +182,7 @@ $("meta").innerHTML = `built ${esc(when(built))} UTC · ${code(data.block.chain_
 <div class="sources">${sources.join("")}</div>${data.logs?.error ? `<b class="fail">auditor API failed: ${esc(data.logs.error)}</b>` : ""}`;
 $("stats").innerHTML = [[sites.length, "enrolled sites", ""], [count((s) => !s.error), "verifying", "ok"], [count((s) => s.error), "failing", "fail"],
   [`${count((s) => s.enrollment?.type === "sigsum")} / ${count((s) => s.enrollment?.type === "sigstore")}`, "sigsum / sigstore", ""],
-  [sites.flatMap((s) => s.transparency?.sigsum ?? []).flatMap((r) => r.history ?? []).reduce((acc, h) => acc + h.leaves.length, 0), "sigsum leaves by enrolled keys", ""]]
+  [sites.reduce((n, s) => n + (s.transparency?.sigstore?.history?.total ?? 0) + (s.transparency?.sigsum ?? []).flatMap((r) => r.history ?? []).reduce((m, h) => m + h.leaves.length, 0), 0), "signing history entries", ""]]
   .map(([v, l, c]) => `<div class="stat"><b class="${c}">${v}</b><span>${l}</span></div>`).join("");
 
 // The URL holds the view state: search, filters, sort, and open cards.
