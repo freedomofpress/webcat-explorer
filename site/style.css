@@ -124,3 +124,4 @@ hr { border: 0; border-top: 1px dashed var(--color-border); margin: 0.75rem 0; }
 
 table.hist { width: 100%; border-collapse: collapse; font-size: 0.85em; }
 table.hist th, table.hist td { text-align: left; padding: 2px 6px; border-bottom: 1px solid var(--color-border); }
+table.hist td { overflow-wrap: anywhere; } table.hist .dim { white-space: normal; }

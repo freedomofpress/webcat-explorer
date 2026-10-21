@@ -21,6 +21,8 @@ const repoName = (u) => (u ?? "").replace(/^https?:\/\/(github\.com|gitlab\.com)
 const ISSUER = { "https://token.actions.githubusercontent.com": "GitHub Actions", "https://gitlab.com": "GitLab CI", "https://ops.gitlab.net": "GitLab CI", "https://accounts.google.com": "Google account", "https://github.com/login/oauth": "GitHub account", "https://login.microsoftonline.com": "Microsoft account", "https://oauth2.sigstore.dev/auth": "Sigstore OAuth" };
 const issuerName = (i) => i ? `<span title="${esc(i)}">${esc(ISSUER[i] ?? new URL(i).hostname)}</span>` : "";
 const shortRef = (r) => esc(r?.replace(/^refs\/(tags|heads)\//, ""));
+// wfName shortens a workflow identity to "owner/repo · file.yml"; the ref has its own column.
+const wfName = (u) => repoName(u).replace(/@.*$/, "").replace("/.github/workflows/", " · ");
 const tbd = (what, why) => `<span class="tbd" title="${esc(why)}">${esc(what)}: TBD</span>`;
 
 // Short status words for the badge. The raw error code stays in a tooltip.
@@ -138,7 +140,7 @@ function detail(s) {
     if (h?.error) html += sub(`Signing history <span class="dim">· unavailable</span>`, `<b class="fail">${esc(h.error)}</b>`);
     else if (h) html += history(h.total, "matching this site's claims", "Every Rekor entry, v1 and v2, whose certificate satisfies the enrollment claims. Claims describe the signer, not the artifact, so signatures other than WEBCAT manifests may appear.",
       ["logged", "log", "index", "identity", "trigger", "ref"], h.entries.map((r) => [ts(r.time), esc(r.log), (r.search_url ? a(r.search_url, r.log_index) : esc(r.log_index)) + (current.has(String(r.log_index)) ? ' <b class="ok">current</b>' : ""),
-        `<span class="dim">${esc(repoName(r.identity || ""))}</span>`, esc(r.ext?.["1.3.6.1.4.1.57264.1.20"] ?? r.ext?.["1.3.6.1.4.1.57264.1.2"] ?? ""), esc(shortRef(r.ext?.["1.3.6.1.4.1.57264.1.14"] ?? r.ext?.["1.3.6.1.4.1.57264.1.6"] ?? ""))]));
+        `<span class="dim" title="${esc(r.identity)}">${esc(wfName(r.identity))}</span>`, esc(r.ext?.["1.3.6.1.4.1.57264.1.20"] ?? r.ext?.["1.3.6.1.4.1.57264.1.2"] ?? ""), esc(shortRef(r.ext?.["1.3.6.1.4.1.57264.1.14"] ?? r.ext?.["1.3.6.1.4.1.57264.1.6"] ?? ""))]));
   }
   html += `<p class="tbds">${tbd("Chain history", "Enrollment changes on the WEBCAT chain (first enrollment, hash updates, removals) are not yet tracked; only the current verified list state is shown.")} </p>`;
   return html;
