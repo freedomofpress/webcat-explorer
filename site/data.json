@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-10-21T10:15:35.230Z",
+ "generated_at": "2026-10-22T04:33:42.003Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "340387",
-  "time": "2026-10-21T10:00:42.181893558Z",
-  "app_hash": "d65ce9204e91d23a18173a781becfa80986009a4f19365f476c1fd135d5b561d",
+  "height": "341450",
+  "time": "2026-10-22T04:00:35.545524004Z",
+  "app_hash": "c6c0392224f9cabefc428b5fc0b16a83738985a251000ecd49536bbd5144d5ce",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 74245,
-   "fetched_at": 1792552886
+   "size": 74492,
+   "fetched_at": 1792642027
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 240843,
-   "fetched_at": 1792552892
+   "size": 241834,
+   "fetched_at": 1792642031
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5314,
-   "fetched_at": 1792552895
+   "size": 5361,
+   "fetched_at": 1792642033
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 162232576,
-   "newest": 1792552895,
-   "updated": 1792563466
+   "entries": 163991040,
+   "newest": 1792642034,
+   "updated": 1792642044
   },
   {
    "log": "rekor-v1",
    "url": "https://rekor.sigstore.dev",
-   "entries": 3219627029,
+   "entries": 3219627076,
    "newest": 1791764985,
-   "updated": 1792570092
+   "updated": 1792638430
   }
  ],
  "sites": [
@@ -522,7 +522,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5314,
+        "size": 5361,
         "leaves": [
          [
           3552,
@@ -532,7 +532,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74245,
+        "size": 74492,
         "leaves": [
          [
           58866,
@@ -611,12 +611,12 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1"
-       },
-       {
         "uuid": "108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677af946cf5ecdc2d5495706764871d4c4a586b7dce4affa4b98cfa932b35d6f154a"
+       },
+       {
+        "uuid": "108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a4dce42e7153271677037cd3cfe1a635a5bed7f40736ab26fa7e796f40d7d07a1"
        }
       ]
      },
@@ -771,7 +771,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240843,
+        "size": 241834,
         "leaves": [
          [
           239075,
@@ -1311,7 +1311,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240843,
+        "size": 241834,
         "leaves": [
          [
           161799,
@@ -1372,7 +1372,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 240843,
+        "size": 241834,
         "leaves": [
          [
           204430,
@@ -1513,7 +1513,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5314,
+        "size": 5361,
         "leaves": [
          [
           3732,
@@ -1543,7 +1543,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74245,
+        "size": 74492,
         "leaves": [
          [
           60281,
@@ -1628,7 +1628,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5314,
+        "size": 5361,
         "leaves": [
          [
           4447,
@@ -1642,7 +1642,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 74245,
+        "size": 74492,
         "leaves": [
          [
           67013,
@@ -1721,6 +1721,10 @@
      "by_hash": {
       "current": [
        {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
+       },
+       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
@@ -1731,28 +1735,24 @@
        {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
        {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
+       },
+       {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ]
      },
