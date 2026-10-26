@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-10-25T04:34:12.191Z",
+ "generated_at": "2026-10-26T04:38:03.645Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "345698",
-  "time": "2026-10-25T04:00:13.156015245Z",
-  "app_hash": "10a99eb3216be57fb72da70fe04c2c188ea562ad24632855db6b092e7d7e1e69",
+  "height": "347115",
+  "time": "2026-10-26T04:00:48.45923955Z",
+  "app_hash": "928a4d26d2daff054b5faa42a8db855f9ed5253734aa106b3e7d23e44854b260",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 75232,
-   "fetched_at": 1792901236
+   "size": 75466,
+   "fetched_at": 1792989436
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 246050,
-   "fetched_at": 1792901240
+   "size": 246732,
+   "fetched_at": 1792989440
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5469,
-   "fetched_at": 1792901242
+   "size": 5494,
+   "fetched_at": 1792989441
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 167985408,
-   "newest": 1792901243,
-   "updated": 1792901253
+   "entries": 169648640,
+   "newest": 1792989442,
+   "updated": 1792989451
   },
   {
    "log": "rekor-v1",
    "url": "https://rekor.sigstore.dev",
-   "entries": 3219627170,
+   "entries": 3219627197,
    "newest": 1791764985,
-   "updated": 1792897455
+   "updated": 1792984983
   }
  ],
  "sites": [
@@ -68,7 +68,7 @@
     "default_csp": "default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval'; img-src * blob: data:; connect-src * blob:; font-src 'self' data: ; media-src * blob: data:; child-src blob: data:; worker-src 'self'; frame-src blob: data:; form-action 'self'; manifest-src 'self'; frame-ancestors 'self'",
     "extra_csp": 0
    },
-   "valid_until": 1797567327,
+   "valid_until": 1798172178,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -77,14 +77,14 @@
        "build_signer": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/freedomofpress/webcat-demo-element",
-       "sha": "94a224e92b5946d329e5186a08138ed3ba508d57",
+       "sha": "56ffafa74454a5e1998a3802658a7ff9a2c61e88",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "trigger": "schedule",
-       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/39198525682/attempts/1",
+       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/40268166051/attempts/1",
        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-10-19T04:15:27.000Z",
+       "not_before": "2026-10-26T04:16:18.000Z",
        "workflow": {
         "repo": "https://github.com/freedomofpress/webcat-demo-element",
         "file": "https://github.com/freedomofpress/webcat-demo-element/blob/refs/heads/main/.github/workflows/build.yml",
@@ -95,15 +95,19 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "3319310299",
-       "integrated_time": "1792383327",
-       "search_url": "https://search.sigstore.dev/?logIndex=3319310299",
-       "uuid": "108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf",
+       "log_index": "3478927408",
+       "integrated_time": "1792988178",
+       "search_url": "https://search.sigstore.dev/?logIndex=3478927408",
+       "uuid": "108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
+       {
+        "uuid": "108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489"
+       },
        {
         "uuid": "108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf"
@@ -214,7 +218,7 @@
      }
     }
    },
-   "signed_at": 1792383327
+   "signed_at": 1792988178
   },
   {
    "host": "enrollment-error.demo.webcat.tech",
@@ -522,7 +526,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5469,
+        "size": 5494,
         "leaves": [
          [
           3552,
@@ -532,7 +536,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 75232,
+        "size": 75466,
         "leaves": [
          [
           58866,
@@ -771,7 +775,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 246050,
+        "size": 246732,
         "leaves": [
          [
           239075,
@@ -1311,7 +1315,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 246050,
+        "size": 246732,
         "leaves": [
          [
           161799,
@@ -1372,7 +1376,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 246050,
+        "size": 246732,
         "leaves": [
          [
           204430,
@@ -1513,7 +1517,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5469,
+        "size": 5494,
         "leaves": [
          [
           3732,
@@ -1543,7 +1547,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 75232,
+        "size": 75466,
         "leaves": [
          [
           60281,
@@ -1632,7 +1636,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5469,
+        "size": 5494,
         "leaves": [
          [
           4447,
@@ -1646,7 +1650,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 75232,
+        "size": 75466,
         "leaves": [
          [
           67013,
