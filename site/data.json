@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-10-29T04:27:19.807Z",
+ "generated_at": "2026-10-30T04:26:43.143Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "351363",
-  "time": "2026-10-29T04:00:33.075291521Z",
-  "app_hash": "cd584bc7d0de20879e840fcad7d44f6e40cce6e738d934beab6dc14600b5cc74",
+  "height": "352779",
+  "time": "2026-10-30T04:00:56.897510831Z",
+  "app_hash": "0accc7dc86f58ef50a9b73eeb9ff046bc101a6f06f901daf3417f3ff5b0099f2",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 76193,
-   "fetched_at": 1793246823
+   "size": 76444,
+   "fetched_at": 1793333223
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 255172,
-   "fetched_at": 1793246826
+   "size": 255480,
+   "fetched_at": 1793333226
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5585,
-   "fetched_at": 1793246828
+   "size": 5626,
+   "fetched_at": 1793333227
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 174144256,
-   "newest": 1793246829,
-   "updated": 1793246834
+   "entries": 175409920,
+   "newest": 1793333228,
+   "updated": 1793333238
   },
   {
    "log": "rekor-v1",
    "url": "https://rekor.sigstore.dev",
-   "entries": 3219627269,
+   "entries": 3219628210,
    "newest": 1791764985,
-   "updated": 1793157464
+   "updated": 1793263232
   }
  ],
  "sites": [
@@ -105,12 +105,12 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489"
-       },
-       {
         "uuid": "108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ad1ac3bcb7f51e3e86f9fe81eedf868abf921852f3ebe9efbbb51d00d0530ffbf"
+       },
+       {
+        "uuid": "108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a412a541755ab4a35384148ec65198600b857ee97eb73d4ccacdd6c44a3db3489"
        }
       ],
       "previous": []
@@ -526,7 +526,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5585,
+        "size": 5626,
         "leaves": [
          [
           3552,
@@ -536,7 +536,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 76193,
+        "size": 76444,
         "leaves": [
          [
           58866,
@@ -775,7 +775,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 255172,
+        "size": 255480,
         "leaves": [
          [
           239075,
@@ -811,13 +811,13 @@
    },
    "manifest": {
     "name": "https://github.com/tinfoilsh/verification-center",
-    "version": "48195a89232019a1cea9355e07b5c9ec9e50dc2e",
+    "version": "e49c9de75b9bedeb1ff9ecb5b36b1b1509096d13",
     "files": 64,
     "wasm": 0,
     "default_csp": "default-src 'none'; style-src 'self'; img-src 'self'",
     "extra_csp": 0
    },
-   "valid_until": 1808297416,
+   "valid_until": 1808932451,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -826,14 +826,14 @@
        "build_signer": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/lsd-cat/lsdv2",
-       "sha": "48195a89232019a1cea9355e07b5c9ec9e50dc2e",
+       "sha": "e49c9de75b9bedeb1ff9ecb5b36b1b1509096d13",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "trigger": "push",
-       "run": "https://github.com/lsd-cat/lsdv2/actions/runs/39750709179/attempts/1",
+       "run": "https://github.com/lsd-cat/lsdv2/actions/runs/40919326122/attempts/1",
        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-10-22T08:50:16.000Z",
+       "not_before": "2026-10-29T17:14:11.000Z",
        "workflow": {
         "repo": "https://github.com/lsd-cat/lsdv2",
         "file": "https://github.com/lsd-cat/lsdv2/blob/refs/heads/main/.github/workflows/hugo.yml",
@@ -844,18 +844,18 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "3382243538",
-       "integrated_time": "1792659017",
-       "search_url": "https://search.sigstore.dev/?logIndex=3382243538",
-       "uuid": "108e9186e8c5677a53ada8ef45db313a2a8e90f46a237dda1bcc9ce9c1b2020cadf2319bf8edeeef",
+       "log_index": "3572320282",
+       "integrated_time": "1793294051",
+       "search_url": "https://search.sigstore.dev/?logIndex=3572320282",
+       "uuid": "108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a53ada8ef45db313a2a8e90f46a237dda1bcc9ce9c1b2020cadf2319bf8edeeef",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a53ada8ef45db313a2a8e90f46a237dda1bcc9ce9c1b2020cadf2319bf8edeeef"
+        "uuid": "108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391"
        }
       ]
      },
@@ -1264,7 +1264,7 @@
      }
     }
    },
-   "signed_at": 1792659016
+   "signed_at": 1793294051
   },
   {
    "host": "manifest-error.demo.webcat.tech",
@@ -1315,7 +1315,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 255172,
+        "size": 255480,
         "leaves": [
          [
           161799,
@@ -1376,7 +1376,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 255172,
+        "size": 255480,
         "leaves": [
          [
           204430,
@@ -1517,7 +1517,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5585,
+        "size": 5626,
         "leaves": [
          [
           3732,
@@ -1547,7 +1547,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 76193,
+        "size": 76444,
         "leaves": [
          [
           60281,
@@ -1636,7 +1636,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5585,
+        "size": 5626,
         "leaves": [
          [
           4447,
@@ -1650,7 +1650,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 76193,
+        "size": 76444,
         "leaves": [
          [
           67013,
@@ -1729,24 +1729,28 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
        {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
+       },
+       {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ],
       "previous": [
        {
+        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        },
@@ -1757,10 +1761,6 @@
        {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
-        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        }
       ]
      },
