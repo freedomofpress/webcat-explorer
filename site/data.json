@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-11-06T04:24:04.964Z",
+ "generated_at": "2026-11-07T04:22:56.894Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "362687",
-  "time": "2026-11-06T04:00:17.423027305Z",
-  "app_hash": "f7e88b4dcd7f8d4c204eaec2e11be7d1f9fc8780b89a9cb60572106a86a1b6ee",
+  "height": "364103",
+  "time": "2026-11-07T04:00:09.658853776Z",
+  "app_hash": "8030b175fa817f667e223e2aff5c5d5abd2ed59bfa12f9a69adf2463843f81d1",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 78079,
-   "fetched_at": 1793938024
+   "size": 78320,
+   "fetched_at": 1794024423
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 266995,
-   "fetched_at": 1793938027
+   "size": 268391,
+   "fetched_at": 1794024426
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5833,
-   "fetched_at": 1793938030
+   "size": 5872,
+   "fetched_at": 1794024428
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 185906944,
-   "newest": 1793938030,
-   "updated": 1793938044
+   "entries": 186903552,
+   "newest": 1793992042,
+   "updated": 1793992074
   },
   {
    "log": "rekor-v1",
    "url": "https://rekor.sigstore.dev",
-   "entries": 3219628210,
-   "newest": 1791764985,
-   "updated": 1793873667
+   "entries": 3243578227,
+   "newest": 1791866947,
+   "updated": 1793961894
   }
  ],
  "sites": [
@@ -561,7 +561,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5833,
+        "size": 5872,
         "leaves": [
          [
           3552,
@@ -571,7 +571,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78079,
+        "size": 78320,
         "leaves": [
          [
           58866,
@@ -810,7 +810,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 266995,
+        "size": 268391,
         "leaves": [
          [
           239075,
@@ -846,13 +846,13 @@
    },
    "manifest": {
     "name": "https://github.com/tinfoilsh/verification-center",
-    "version": "e49c9de75b9bedeb1ff9ecb5b36b1b1509096d13",
+    "version": "f88d108c90048dfabb5d9dc815abce011e0401e0",
     "files": 64,
     "wasm": 0,
     "default_csp": "default-src 'none'; style-src 'self'; img-src 'self'",
     "extra_csp": 0
    },
-   "valid_until": 1808932451,
+   "valid_until": 1809196167,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -861,14 +861,14 @@
        "build_signer": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/lsd-cat/lsdv2",
-       "sha": "e49c9de75b9bedeb1ff9ecb5b36b1b1509096d13",
+       "sha": "f88d108c90048dfabb5d9dc815abce011e0401e0",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "trigger": "push",
-       "run": "https://github.com/lsd-cat/lsdv2/actions/runs/40919326122/attempts/1",
+       "run": "https://github.com/lsd-cat/lsdv2/actions/runs/41336860422/attempts/1",
        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-10-29T17:14:11.000Z",
+       "not_before": "2026-11-01T18:29:27.000Z",
        "workflow": {
         "repo": "https://github.com/lsd-cat/lsdv2",
         "file": "https://github.com/lsd-cat/lsdv2/blob/refs/heads/main/.github/workflows/hugo.yml",
@@ -879,24 +879,48 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "3572320282",
-       "integrated_time": "1793294051",
-       "search_url": "https://search.sigstore.dev/?logIndex=3572320282",
-       "uuid": "108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391",
+       "log_index": "3635167516",
+       "integrated_time": "1793557767",
+       "search_url": "https://search.sigstore.dev/?logIndex=3635167516",
+       "uuid": "108e9186e8c5677a7ac76ffc65132960c96e6b131b59bcf72b834277c42aa145c825389b83b93bb4",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a10a48d54a44332f04f9479ac2bcdbe00608de3c9bb6d49830d96503d17c4d391"
+        "uuid": "108e9186e8c5677a7ac76ffc65132960c96e6b131b59bcf72b834277c42aa145c825389b83b93bb4",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a7ac76ffc65132960c96e6b131b59bcf72b834277c42aa145c825389b83b93bb4"
        }
       ]
      },
      "history": {
-      "total": 18,
+      "total": 19,
       "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3241963316,
+        "time": 1791872484,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "HugoBuild",
+         "1.3.6.1.4.1.57264.1.5": "lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/lsd-cat/lsdv2",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/lsd-cat",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/lsd-cat/lsdv2/.github/workflows/hugo.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:lsd-cat/lsdv2:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3241963316"
+       },
        {
         "log": "rekor-v1",
         "log_index": 3222656633,
@@ -1323,7 +1347,7 @@
      }
     }
    },
-   "signed_at": 1793294051
+   "signed_at": 1793557767
   },
   {
    "host": "manifest-error.demo.webcat.tech",
@@ -1374,7 +1398,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 266995,
+        "size": 268391,
         "leaves": [
          [
           161799,
@@ -1435,7 +1459,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 266995,
+        "size": 268391,
         "leaves": [
          [
           204430,
@@ -1576,7 +1600,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5833,
+        "size": 5872,
         "leaves": [
          [
           3732,
@@ -1606,7 +1630,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78079,
+        "size": 78320,
         "leaves": [
          [
           60281,
@@ -1695,7 +1719,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5833,
+        "size": 5872,
         "leaves": [
          [
           4447,
@@ -1709,7 +1733,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78079,
+        "size": 78320,
         "leaves": [
          [
           67013,
