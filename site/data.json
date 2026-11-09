@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-11-08T04:22:52.814Z",
+ "generated_at": "2026-11-09T04:25:43.520Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "365519",
-  "time": "2026-11-08T04:00:20.484547366Z",
-  "app_hash": "ddb45eb7cc9a9226b925f6bab3ce64f5097b1fe045b32eabdcaa23a5a4aa29c4",
+  "height": "366934",
+  "time": "2026-11-09T04:00:21.938953888Z",
+  "app_hash": "cfd29f526f9845411af292ef794a7d9ad282bf5f9dc8123120c497e42c6d9c18",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 78554,
-   "fetched_at": 1794110823
+   "size": 78763,
+   "fetched_at": 1794197223
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 268922,
-   "fetched_at": 1794110826
+   "size": 268975,
+   "fetched_at": 1794197227
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 5900,
-   "fetched_at": 1794110828
+   "size": 5929,
+   "fetched_at": 1794197229
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 186903552,
-   "newest": 1793992042,
-   "updated": 1793992074
+   "entries": 190449408,
+   "newest": 1794197230,
+   "updated": 1794197241
   },
   {
    "log": "rekor-v1",
    "url": "https://rekor.sigstore.dev",
-   "entries": 3271578260,
-   "newest": 1792101050,
-   "updated": 1794046040
+   "entries": 3297578280,
+   "newest": 1792243353,
+   "updated": 1794130437
   }
  ],
  "sites": [
@@ -68,7 +68,7 @@
     "default_csp": "default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval'; img-src * blob: data:; connect-src * blob:; font-src 'self' data: ; media-src * blob: data:; child-src blob: data:; worker-src 'self'; frame-src blob: data:; form-action 'self'; manifest-src 'self'; frame-ancestors 'self'",
     "extra_csp": 0
    },
-   "valid_until": 1798776643,
+   "valid_until": 1799381460,
    "transparency": {
     "sigstore": {
      "signers": [
@@ -77,14 +77,14 @@
        "build_signer": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/freedomofpress/webcat-demo-element",
-       "sha": "2b490fa4aac8e788db573a9b1c10cb5da7a2ad1a",
+       "sha": "6c8bc37b92808ebcc50ef24f8f72e07904e508a2",
        "ref": "refs/heads/main",
        "build_config": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "trigger": "schedule",
-       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/41386956294/attempts/1",
+       "run": "https://github.com/freedomofpress/webcat-demo-element/actions/runs/42560331611/attempts/1",
        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-11-02T04:10:43.000Z",
+       "not_before": "2026-11-09T04:11:00.000Z",
        "workflow": {
         "repo": "https://github.com/freedomofpress/webcat-demo-element",
         "file": "https://github.com/freedomofpress/webcat-demo-element/blob/refs/heads/main/.github/workflows/build.yml",
@@ -95,7 +95,7 @@
      "entries": [
       {
        "log_url": "https://log2025-1.rekor.sigstore.dev",
-       "log_index": "179993272",
+       "log_index": "190452907",
        "found": null
       }
      ],
@@ -104,7 +104,7 @@
       "previous": []
      },
      "history": {
-      "total": 6,
+      "total": 7,
       "entries": [
        {
         "log": "log2025-1",
@@ -128,6 +128,30 @@
          "1.3.6.1.4.1.57264.1.22": "public",
          "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
         }
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3319310299,
+        "time": 1792383327,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "schedule",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "schedule",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3319310299"
        },
        {
         "log": "rekor-v1",
@@ -253,7 +277,7 @@
      }
     }
    },
-   "signed_at": 1793592643
+   "signed_at": 1794197460
   },
   {
    "host": "enrollment-error.demo.webcat.tech",
@@ -561,7 +585,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5900,
+        "size": 5929,
         "leaves": [
          [
           3552,
@@ -571,7 +595,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78554,
+        "size": 78763,
         "leaves": [
          [
           58866,
@@ -810,7 +834,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 268922,
+        "size": 268975,
         "leaves": [
          [
           239075,
@@ -1398,7 +1422,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 268922,
+        "size": 268975,
         "leaves": [
          [
           161799,
@@ -1459,7 +1483,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 268922,
+        "size": 268975,
         "leaves": [
          [
           204430,
@@ -1600,7 +1624,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5900,
+        "size": 5929,
         "leaves": [
          [
           3732,
@@ -1630,7 +1654,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78554,
+        "size": 78763,
         "leaves": [
          [
           60281,
@@ -1719,7 +1743,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 5900,
+        "size": 5929,
         "leaves": [
          [
           4447,
@@ -1733,7 +1757,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 78554,
+        "size": 78763,
         "leaves": [
          [
           67013,
@@ -1830,10 +1854,6 @@
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
-       },
-       {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        },
@@ -1844,6 +1864,10 @@
        {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
+       },
+       {
+        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        }
       ]
      },
@@ -4478,8 +4502,32 @@
       ]
      },
      "history": {
-      "total": 6,
+      "total": 7,
       "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3315284809,
+        "time": 1792349573,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.4": "Update WEBCAT Manifest",
+         "1.3.6.1.4.1.57264.1.5": "cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-cli/.github/workflows/webcat-generate-and-commit-manifest.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/cfm/www.endeixis.org",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/cfm",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/cfm/www.endeixis.org/.github/workflows/ikiwiki-with-manifest.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "workflow_dispatch",
+         "1.3.6.1.4.1.57264.1.22": "private",
+         "1.3.6.1.4.1.57264.1.24": "repo:cfm/www.endeixis.org:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3315284809"
+       },
        {
         "log": "rekor-v1",
         "log_index": 992232056,
