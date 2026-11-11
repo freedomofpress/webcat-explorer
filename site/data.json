@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-10T04:23:56.409Z",
+ "generated_at": "2026-11-11T04:24:26.616Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "368351",
-  "time": "2026-11-10T04:00:22.242030819Z",
-  "app_hash": "f38a67e5bcbdd7aef3478ccf4dc0dd198a58eab401ad7e97443a656de59f2a95",
+  "height": "369767",
+  "time": "2026-11-11T04:00:22.243531061Z",
+  "app_hash": "c72e94373870f541c5ec25f109197c7ca6aa762573b333de0536929ac957dd0b",
   "canonical_root_hash": "e70957707703896c6a3ba23e5c42ceb6b0d03d861f084c6f3690e79e9096d25d",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 79130,
-   "fetched_at": 1794283626
+   "size": 79400,
+   "fetched_at": 1794370028
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 270585,
-   "fetched_at": 1794283630
+   "size": 274221,
+   "fetched_at": 1794370032
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6045,
-   "fetched_at": 1794283631
+   "size": 6078,
+   "fetched_at": 1794370034
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 191861248,
-   "newest": 1794283631,
-   "updated": 1794283644
+   "entries": 193431040,
+   "newest": 1794370034,
+   "updated": 1794370048
   },
   {
    "log": "rekor-v1",
@@ -608,7 +608,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6045,
+        "size": 6078,
         "leaves": [
          [
           3552,
@@ -618,7 +618,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 79130,
+        "size": 79400,
         "leaves": [
          [
           58866,
@@ -857,7 +857,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 270585,
+        "size": 274221,
         "leaves": [
          [
           239075,
@@ -1445,7 +1445,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 270585,
+        "size": 274221,
         "leaves": [
          [
           161799,
@@ -1506,7 +1506,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 270585,
+        "size": 274221,
         "leaves": [
          [
           204430,
@@ -1647,7 +1647,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6045,
+        "size": 6078,
         "leaves": [
          [
           3732,
@@ -1677,7 +1677,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 79130,
+        "size": 79400,
         "leaves": [
          [
           60281,
@@ -1766,7 +1766,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6045,
+        "size": 6078,
         "leaves": [
          [
           4447,
@@ -1780,7 +1780,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 79130,
+        "size": 79400,
         "leaves": [
          [
           67013,
@@ -2242,8 +2242,32 @@
       ]
      },
      "history": {
-      "total": 75,
+      "total": 76,
       "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3322673040,
+        "time": 1792423702,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/docs/trim-markdown",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/docs/trim-markdown",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/docs/trim-markdown",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/docs/trim-markdown",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/docs/trim-markdown",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/docs/trim-markdown"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3322673040"
+       },
        {
         "log": "rekor-v1",
         "log_index": 3174316071,
