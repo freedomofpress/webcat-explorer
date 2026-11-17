@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-16T04:29:50.064Z",
+ "generated_at": "2026-11-17T04:24:19.996Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "376846",
-  "time": "2026-11-16T04:00:24.744196565Z",
-  "app_hash": "594d3e3cc380214be0f725a508fd9f98cbe47b5b0a87ab030579db8da990769e",
+  "height": "378262",
+  "time": "2026-11-17T04:00:26.411875215Z",
+  "app_hash": "e2fbceccbd2e1e9d45a479d5eba117612ec1440989dc17eb4b20cd8de70f5b4d",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 80728,
-   "fetched_at": 1794802036
+   "size": 80971,
+   "fetched_at": 1794888427
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 278752,
-   "fetched_at": 1794802040
+   "size": 278809,
+   "fetched_at": 1794888431
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6244,
-   "fetched_at": 1794802042
+   "size": 6278,
+   "fetched_at": 1794888433
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 201125376,
-   "newest": 1794802042,
-   "updated": 1794802053
+   "entries": 202511872,
+   "newest": 1794888433,
+   "updated": 1794888437
   },
   {
    "log": "rekor-v1",
@@ -104,8 +104,31 @@
       "previous": []
      },
      "history": {
-      "total": 8,
+      "total": 9,
       "entries": [
+       {
+        "log": "log2025-1",
+        "log_index": 201129526,
+        "time": 1794802231,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "schedule",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "schedule",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        }
+       },
        {
         "log": "log2025-1",
         "log_index": 190452907,
@@ -608,7 +631,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6244,
+        "size": 6278,
         "leaves": [
          [
           3552,
@@ -618,7 +641,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80728,
+        "size": 80971,
         "leaves": [
          [
           58866,
@@ -857,7 +880,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278752,
+        "size": 278809,
         "leaves": [
          [
           239075,
@@ -929,7 +952,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278752,
+        "size": 278809,
         "leaves": [
          [
           161799,
@@ -990,7 +1013,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278752,
+        "size": 278809,
         "leaves": [
          [
           204430,
@@ -1131,7 +1154,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6244,
+        "size": 6278,
         "leaves": [
          [
           3732,
@@ -1165,7 +1188,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80728,
+        "size": 80971,
         "leaves": [
          [
           60281,
@@ -1254,7 +1277,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6244,
+        "size": 6278,
         "leaves": [
          [
           4447,
@@ -1268,7 +1291,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80728,
+        "size": 80971,
         "leaves": [
          [
           67013,
@@ -1347,10 +1370,6 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
-       },
-       {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        },
@@ -1361,6 +1380,10 @@
        {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
+        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        }
       ],
       "previous": [
@@ -1681,32 +1704,32 @@
    },
    "manifest": {
     "name": "https://github.com/tinfoilsh/verification-center",
-    "version": "abe229f5197958dcbb69cd75f29575ee3ed54bbe",
+    "version": "ee5399de7602e75228310347a34626dd760d96bf",
     "files": 38,
     "wasm": 0,
     "default_csp": "default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; font-src 'self';",
     "extra_csp": 0
    },
-   "valid_until": 1809778841,
+   "valid_until": 1810395627,
    "transparency": {
     "sigstore": {
      "signers": [
       {
        "issuer": "https://token.actions.githubusercontent.com",
-       "build_signer": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/deps/tinfoil-1.4.0",
+       "build_signer": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
        "runner": "github-hosted",
        "repo": "https://github.com/tinfoilsh/verification-center",
-       "sha": "abe229f5197958dcbb69cd75f29575ee3ed54bbe",
-       "ref": "refs/heads/deps/tinfoil-1.4.0",
-       "build_config": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/deps/tinfoil-1.4.0",
+       "sha": "ee5399de7602e75228310347a34626dd760d96bf",
+       "ref": "refs/heads/main",
+       "build_config": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
        "trigger": "push",
-       "run": "https://github.com/tinfoilsh/verification-center/actions/runs/42615870260/attempts/1",
-       "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/deps/tinfoil-1.4.0",
+       "run": "https://github.com/tinfoilsh/verification-center/actions/runs/43898494857/attempts/1",
+       "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
        "identity_kind": "uri",
-       "not_before": "2026-11-09T12:20:41.000Z",
+       "not_before": "2026-11-16T15:40:27.000Z",
        "workflow": {
         "repo": "https://github.com/tinfoilsh/verification-center",
-        "file": "https://github.com/tinfoilsh/verification-center/blob/refs/heads/deps/tinfoil-1.4.0/.github/workflows/vercel.yaml",
+        "file": "https://github.com/tinfoilsh/verification-center/blob/refs/heads/main/.github/workflows/vercel.yaml",
         "runs": "https://github.com/tinfoilsh/verification-center/actions/workflows/vercel.yaml"
        }
       }
@@ -1714,18 +1737,18 @@
      "entries": [
       {
        "log_url": "https://rekor.sigstore.dev",
-       "log_index": "3764850577",
-       "integrated_time": "1794226841",
-       "search_url": "https://search.sigstore.dev/?logIndex=3764850577",
-       "uuid": "108e9186e8c5677ac6b8cf5d3e9ea6d2466f0b75540ad5a19874cfe2005ce59dbf55c6361b13d7a8",
+       "log_index": "3929083005",
+       "integrated_time": "1794843627",
+       "search_url": "https://search.sigstore.dev/?logIndex=3929083005",
+       "uuid": "108e9186e8c5677a096911422cbfa537e3c55626c6376379b805cff658d62503f495d6d947549c09",
        "found": true
       }
      ],
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677ac6b8cf5d3e9ea6d2466f0b75540ad5a19874cfe2005ce59dbf55c6361b13d7a8",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ac6b8cf5d3e9ea6d2466f0b75540ad5a19874cfe2005ce59dbf55c6361b13d7a8"
+        "uuid": "108e9186e8c5677a096911422cbfa537e3c55626c6376379b805cff658d62503f495d6d947549c09",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a096911422cbfa537e3c55626c6376379b805cff658d62503f495d6d947549c09"
        }
       ]
      },
@@ -3522,7 +3545,7 @@
      }
     }
    },
-   "signed_at": 1794226841
+   "signed_at": 1794843627
   },
   {
    "host": "verification-center.tinfoil.sh",
