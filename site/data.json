@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-17T04:24:19.996Z",
+ "generated_at": "2026-11-18T04:24:03.441Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "378262",
-  "time": "2026-11-17T04:00:26.411875215Z",
-  "app_hash": "e2fbceccbd2e1e9d45a479d5eba117612ec1440989dc17eb4b20cd8de70f5b4d",
+  "height": "379678",
+  "time": "2026-11-18T04:00:49.280179718Z",
+  "app_hash": "bf39ea3ab17a5c9cc16b35c60504034d900fbd25fad7ef3dc0d88cff8d8b6096",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 80971,
-   "fetched_at": 1794888427
+   "size": 81254,
+   "fetched_at": 1794974836
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 278809,
-   "fetched_at": 1794888431
+   "size": 279048,
+   "fetched_at": 1794974838
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6278,
-   "fetched_at": 1794888433
+   "size": 6324,
+   "fetched_at": 1794974840
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 202511872,
-   "newest": 1794888433,
-   "updated": 1794888437
+   "entries": 203690496,
+   "newest": 1794974841,
+   "updated": 1794974854
   },
   {
    "log": "rekor-v1",
@@ -631,7 +631,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6278,
+        "size": 6324,
         "leaves": [
          [
           3552,
@@ -641,7 +641,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80971,
+        "size": 81254,
         "leaves": [
          [
           58866,
@@ -880,7 +880,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278809,
+        "size": 279048,
         "leaves": [
          [
           239075,
@@ -952,7 +952,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278809,
+        "size": 279048,
         "leaves": [
          [
           161799,
@@ -1013,7 +1013,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 278809,
+        "size": 279048,
         "leaves": [
          [
           204430,
@@ -1154,7 +1154,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6278,
+        "size": 6324,
         "leaves": [
          [
           3732,
@@ -1188,7 +1188,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80971,
+        "size": 81254,
         "leaves": [
          [
           60281,
@@ -1277,7 +1277,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6278,
+        "size": 6324,
         "leaves": [
          [
           4447,
@@ -1291,7 +1291,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 80971,
+        "size": 81254,
         "leaves": [
          [
           67013,
@@ -1370,10 +1370,6 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        },
@@ -1384,6 +1380,10 @@
        {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
+       },
+       {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        }
       ],
       "previous": [
