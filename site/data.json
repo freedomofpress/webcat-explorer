@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-18T04:24:03.441Z",
+ "generated_at": "2026-11-19T04:24:23.213Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "379678",
-  "time": "2026-11-18T04:00:49.280179718Z",
-  "app_hash": "bf39ea3ab17a5c9cc16b35c60504034d900fbd25fad7ef3dc0d88cff8d8b6096",
+  "height": "381094",
+  "time": "2026-11-19T04:00:38.752402093Z",
+  "app_hash": "e38015ded451521c08eb55314a6f8aed9009acce60ba7b33130f3a19c99afb0f",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 81254,
-   "fetched_at": 1794974836
+   "size": 81587,
+   "fetched_at": 1795061227
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 279048,
-   "fetched_at": 1794974838
+   "size": 279105,
+   "fetched_at": 1795061230
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6324,
-   "fetched_at": 1794974840
+   "size": 6406,
+   "fetched_at": 1795061232
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev",
-   "entries": 203690496,
-   "newest": 1794974841,
-   "updated": 1794974854
+   "entries": 205316352,
+   "newest": 1795061232,
+   "updated": 1795061245
   },
   {
    "log": "rekor-v1",
@@ -631,7 +631,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6324,
+        "size": 6406,
         "leaves": [
          [
           3552,
@@ -641,7 +641,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 81254,
+        "size": 81587,
         "leaves": [
          [
           58866,
@@ -880,7 +880,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 279048,
+        "size": 279105,
         "leaves": [
          [
           239075,
@@ -952,7 +952,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 279048,
+        "size": 279105,
         "leaves": [
          [
           161799,
@@ -1013,7 +1013,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 279048,
+        "size": 279105,
         "leaves": [
          [
           204430,
@@ -1154,7 +1154,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6324,
+        "size": 6406,
         "leaves": [
          [
           3732,
@@ -1188,7 +1188,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 81254,
+        "size": 81587,
         "leaves": [
          [
           60281,
@@ -1277,7 +1277,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6324,
+        "size": 6406,
         "leaves": [
          [
           4447,
@@ -1291,7 +1291,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 81254,
+        "size": 81587,
         "leaves": [
          [
           67013,
@@ -1370,10 +1370,6 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
@@ -1384,24 +1380,28 @@
        {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
-       },
-       {
-        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
-       },
-       {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        },
        {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
+       },
+       {
+        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
+        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        }
       ]
      },
