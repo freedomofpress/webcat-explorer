@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-20T04:25:46.572Z",
+ "generated_at": "2026-11-21T04:23:52.707Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "382510",
-  "time": "2026-11-20T04:00:28.783616694Z",
-  "app_hash": "e27d55acb7bd429896ddb5ba555ac3efc70426cd72fc1292bb207676e345e2a3",
+  "height": "383927",
+  "time": "2026-11-21T04:00:47.867644984Z",
+  "app_hash": "70a05a575f23c34048f68e0ff76cb767160e44eba0bb0b87e12cb734b16e89d1",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
-  "error": "The operation was aborted due to timeout"
+  "error": "Code: 76. DB::Exception: Cannot open file /srv/index/clickhouse/store/b22/b22dee7f-615a-49c4-b7a8-5f9698f18436/all_1_1335_653/data.bin: , errno: 5, strerror: Input/output"
  },
  "index": [],
  "sites": [
@@ -78,7 +78,7 @@
       "previous": []
      },
      "history": {
-      "error": "fetch failed"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -165,7 +165,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/884/884cc0e1-3477-41a8-821c-8feb188c33aa/all_52684_52700_7/statistics.packed: , errno: 5, strer"
      }
     }
    },
@@ -297,7 +297,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -534,7 +534,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -704,10 +704,6 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
-       },
-       {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
        },
@@ -718,29 +714,33 @@
        {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
+       },
+       {
+        "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        }
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
        {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
+       },
+       {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -817,7 +817,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -893,7 +893,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -971,7 +971,7 @@
       ]
      },
      "history": {
-      "error": "fetch failed"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
@@ -1055,7 +1055,7 @@
       ]
      },
      "history": {
-      "error": "The operation was aborted due to timeout"
+      "error": "Code: 76. DB::ErrnoException: Cannot open file /srv/index/clickhouse/store/d5c/d5c76d15-350e-4e5b-9fa4-ae9044047ff4/all_5060_5114_28/statistics.packed: , errno: 5, strerr"
      }
     }
    },
