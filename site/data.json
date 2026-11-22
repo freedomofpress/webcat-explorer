@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-21T04:23:52.707Z",
+ "generated_at": "2026-11-22T04:24:09.456Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "383927",
-  "time": "2026-11-21T04:00:47.867644984Z",
-  "app_hash": "70a05a575f23c34048f68e0ff76cb767160e44eba0bb0b87e12cb734b16e89d1",
+  "height": "385343",
+  "time": "2026-11-22T04:00:10.676734864Z",
+  "app_hash": "5f5ae84e66f75bd32ab74992d243182f05f5646811b8466b1c5f78506764c68f",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
