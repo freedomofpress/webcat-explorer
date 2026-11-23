@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T18:04:23.286Z",
+ "generated_at": "2026-11-23T18:25:58.775Z",
  "block": {
   "chain_id": "webcat-test-02",
   "height": "387584",
@@ -10,25 +10,25 @@
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 83031,
-   "fetched_at": 1795455955
+   "size": 83041,
+   "fetched_at": 1795457225
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 280483,
-   "fetched_at": 1795455964
+   "size": 280485,
+   "fetched_at": 1795457229
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6784,
-   "fetched_at": 1795455969
+   "size": 6788,
+   "fetched_at": 1795457231
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev/api/v2",
-   "entries": 205611008,
-   "newest": 1795075633,
-   "updated": 1795075644
+   "entries": 212860160,
+   "newest": 1795457249,
+   "updated": 1795457998
   },
   {
    "log": "rekor-v1",
@@ -104,8 +104,31 @@
       "previous": []
      },
      "history": {
-      "total": 9,
+      "total": 10,
       "entries": [
+       {
+        "log": "log2025-1",
+        "log_index": 211870890,
+        "time": 1795407046,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "schedule",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "schedule",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        }
+       },
        {
         "log": "log2025-1",
         "log_index": 201129526,
@@ -631,7 +654,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6784,
+        "size": 6788,
         "leaves": [
          [
           3552,
@@ -641,7 +664,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83031,
+        "size": 83041,
         "leaves": [
          [
           58866,
@@ -880,7 +903,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280483,
+        "size": 280485,
         "leaves": [
          [
           239075,
@@ -952,7 +975,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280483,
+        "size": 280485,
         "leaves": [
          [
           161799,
@@ -1013,7 +1036,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280483,
+        "size": 280485,
         "leaves": [
          [
           204430,
@@ -1154,7 +1177,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6784,
+        "size": 6788,
         "leaves": [
          [
           3732,
@@ -1188,7 +1211,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83031,
+        "size": 83041,
         "leaves": [
          [
           60281,
@@ -1277,7 +1300,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6784,
+        "size": 6788,
         "leaves": [
          [
           4447,
@@ -1291,7 +1314,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83031,
+        "size": 83041,
         "leaves": [
          [
           67013,
@@ -1370,6 +1393,10 @@
      "by_hash": {
       "current": [
        {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
+       },
+       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
@@ -1380,28 +1407,24 @@
        {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ],
       "previous": [
        {
-        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
-       },
-       {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
-       },
-       {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        },
        {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
+       },
+       {
+        "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
+       },
+       {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        }
       ]
      },
