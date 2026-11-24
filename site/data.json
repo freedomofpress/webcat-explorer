@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-23T18:25:58.775Z",
+ "generated_at": "2026-11-24T04:25:11.459Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "387584",
-  "time": "2026-11-23T18:00:07.76316411Z",
-  "app_hash": "025da48cc337a620901c0634e0147067b44b29368a7387f433b70946568d39a1",
+  "height": "388175",
+  "time": "2026-11-24T04:00:58.208509992Z",
+  "app_hash": "b08404ebe9605419796e14bb040458105cd120a92be2727528b89331aae1b699",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 83041,
-   "fetched_at": 1795457225
+   "size": 83228,
+   "fetched_at": 1795493227
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 280485,
-   "fetched_at": 1795457229
+   "size": 280529,
+   "fetched_at": 1795493229
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 6788,
-   "fetched_at": 1795457231
+   "size": 6817,
+   "fetched_at": 1795493232
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev/api/v2",
-   "entries": 212860160,
-   "newest": 1795457249,
-   "updated": 1795457998
+   "entries": 213516800,
+   "newest": 1795493233,
+   "updated": 1795493249
   },
   {
    "log": "rekor-v1",
@@ -104,7 +104,7 @@
       "previous": []
      },
      "history": {
-      "total": 10,
+      "total": 11,
       "entries": [
        {
         "log": "log2025-1",
@@ -197,6 +197,30 @@
          "1.3.6.1.4.1.57264.1.22": "public",
          "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
         }
+       },
+       {
+        "log": "rekor-v1",
+        "log_index": 3478927408,
+        "time": 1792988178,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "schedule",
+         "1.3.6.1.4.1.57264.1.4": "Build and sign latest Element",
+         "1.3.6.1.4.1.57264.1.5": "freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/freedomofpress/webcat-demo-element",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/freedomofpress",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/freedomofpress/webcat-demo-element/.github/workflows/build.yml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "schedule",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:freedomofpress/webcat-demo-element:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3478927408"
        },
        {
         "log": "rekor-v1",
@@ -654,7 +678,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6788,
+        "size": 6817,
         "leaves": [
          [
           3552,
@@ -664,7 +688,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83041,
+        "size": 83228,
         "leaves": [
          [
           58866,
@@ -903,7 +927,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280485,
+        "size": 280529,
         "leaves": [
          [
           239075,
@@ -975,7 +999,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280485,
+        "size": 280529,
         "leaves": [
          [
           161799,
@@ -1036,7 +1060,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 280485,
+        "size": 280529,
         "leaves": [
          [
           204430,
@@ -1177,7 +1201,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6788,
+        "size": 6817,
         "leaves": [
          [
           3732,
@@ -1211,7 +1235,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83041,
+        "size": 83228,
         "leaves": [
          [
           60281,
@@ -1300,7 +1324,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 6788,
+        "size": 6817,
         "leaves": [
          [
           4447,
@@ -1314,7 +1338,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 83041,
+        "size": 83228,
         "leaves": [
          [
           67013,
@@ -1393,10 +1417,6 @@
      "by_hash": {
       "current": [
        {
-        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
-       },
-       {
         "uuid": "108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a5bfbb343b245ebe6626023e42ccd75be97183ef6a848bfe796ee8ae61d374d96"
        },
@@ -1407,10 +1427,18 @@
        {
         "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
+        "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        }
       ],
       "previous": [
        {
+        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
+        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
+       },
+       {
         "uuid": "108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677ae2efc2f9207331fc2c1f159161966409fe9b49ceec013ce3de88f05591a795c2"
        },
@@ -1421,10 +1449,6 @@
        {
         "uuid": "108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6",
         "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a72e3dad5c4fe76f6879e5a3fcb803df2f768e08d4e01dc43fcb1a1c8a4f935a6"
-       },
-       {
-        "uuid": "108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a",
-        "url": "https://search.sigstore.dev/?uuid=108e9186e8c5677a93551e0afbf78aa8b870c9bf59e7c6c2f7e605c539c73878f926ab2f5174bc3a"
        }
       ]
      },
@@ -1776,8 +1800,32 @@
       ]
      },
      "history": {
-      "total": 76,
+      "total": 77,
       "entries": [
+       {
+        "log": "rekor-v1",
+        "log_index": 3324133457,
+        "time": 1792430901,
+        "kind": "hashedrekord",
+        "issuer": "https://token.actions.githubusercontent.com",
+        "identity": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+        "ext": {
+         "1.3.6.1.4.1.57264.1.2": "push",
+         "1.3.6.1.4.1.57264.1.4": "Vercel + WEBCAT",
+         "1.3.6.1.4.1.57264.1.5": "tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.6": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.9": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.11": "github-hosted",
+         "1.3.6.1.4.1.57264.1.12": "https://github.com/tinfoilsh/verification-center",
+         "1.3.6.1.4.1.57264.1.14": "refs/heads/main",
+         "1.3.6.1.4.1.57264.1.16": "https://github.com/tinfoilsh",
+         "1.3.6.1.4.1.57264.1.18": "https://github.com/tinfoilsh/verification-center/.github/workflows/vercel.yaml@refs/heads/main",
+         "1.3.6.1.4.1.57264.1.20": "push",
+         "1.3.6.1.4.1.57264.1.22": "public",
+         "1.3.6.1.4.1.57264.1.24": "repo:tinfoilsh/verification-center:ref:refs/heads/main"
+        },
+        "search_url": "https://search.sigstore.dev/?logIndex=3324133457"
+       },
        {
         "log": "rekor-v1",
         "log_index": 3322673040,
