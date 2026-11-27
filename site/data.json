@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-11-26T04:25:40.092Z",
+ "generated_at": "2026-11-27T04:25:41.329Z",
  "block": {
   "chain_id": "webcat-test-02",
-  "height": "391007",
-  "time": "2026-11-26T04:00:42.425139593Z",
-  "app_hash": "0bd897820618d4cccd3f7aec4df446e8b22ed55b6609e53cc97b2fd16f4892cd",
+  "height": "392423",
+  "time": "2026-11-27T04:00:26.275799537Z",
+  "app_hash": "d83bf79a5401d4a623281c7d8763076e15ce42a566fe8dd3c34a1549b1348068",
   "canonical_root_hash": "1edbb7ce0473fa267f295781113829bf890ebb074772a96258a09d000da719cd",
   "signed_power": "3/3"
  },
  "logs": {
   "https://seasalp.glasklar.is": {
-   "size": 84171,
-   "fetched_at": 1795666034
+   "size": 84599,
+   "fetched_at": 1795752435
   },
   "https://test.sigsum.org/barreleye": {
-   "size": 281692,
-   "fetched_at": 1795666037
+   "size": 283370,
+   "fetched_at": 1795752438
   },
   "https://ginkgo.tlog.mullvad.net": {
-   "size": 7022,
-   "fetched_at": 1795666039
+   "size": 7136,
+   "fetched_at": 1795752440
   }
  },
  "index": [
   {
    "log": "log2025-1",
    "url": "https://log2025-1.rekor.sigstore.dev/api/v2",
-   "entries": 216894976,
-   "newest": 1795666040,
-   "updated": 1795666057
+   "entries": 218838528,
+   "newest": 1795752440,
+   "updated": 1795752455
   },
   {
    "log": "rekor-v1",
@@ -678,7 +678,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 7022,
+        "size": 7136,
         "leaves": [
          [
           3552,
@@ -688,7 +688,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 84171,
+        "size": 84599,
         "leaves": [
          [
           58866,
@@ -927,7 +927,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 281692,
+        "size": 283370,
         "leaves": [
          [
           239075,
@@ -999,7 +999,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 281692,
+        "size": 283370,
         "leaves": [
          [
           161799,
@@ -1060,7 +1060,7 @@
       "history": [
        {
         "log_url": "https://test.sigsum.org/barreleye",
-        "size": 281692,
+        "size": 283370,
         "leaves": [
          [
           204430,
@@ -1201,7 +1201,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 7022,
+        "size": 7136,
         "leaves": [
          [
           3732,
@@ -1247,7 +1247,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 84171,
+        "size": 84599,
         "leaves": [
          [
           60281,
@@ -1344,7 +1344,7 @@
       "history": [
        {
         "log_url": "https://ginkgo.tlog.mullvad.net",
-        "size": 7022,
+        "size": 7136,
         "leaves": [
          [
           4447,
@@ -1358,7 +1358,7 @@
        },
        {
         "log_url": "https://seasalp.glasklar.is",
-        "size": 84171,
+        "size": 84599,
         "leaves": [
          [
           67013,
